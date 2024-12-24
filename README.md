@@ -1,4 +1,5 @@
 # 2024 겨울방학 간단학 프로젝트
+- [로그인 페이지](https://gubbib.github.io/2024WinterProject/index.html)
 
 ## 기간
 - 2024년 12월 31일 ~ ####년 ##월 ##일
@@ -12,8 +13,12 @@
 - **Frontend**: HTMl, CSS, JavaScript
 - **DataBase**: MySQL
 
+## 페이지 뷰
+![로그인 페이지](https://github.com/user-attachments/assets/e18d06dc-95f4-487a-b67c-8fcbdef73af8)
+
+
 ## 추가 예정 사항
-- 로그인 페이지 작성
+- 로그인 페이지 작성 ( 2024-12-25 완료 )
 - 회원가입 페이지 작성
 - 게시판 페이지 작성
 - ERD 설계 및 DB 연결
