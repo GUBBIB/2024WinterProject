@@ -1,5 +1,8 @@
 # 2024 겨울방학 간단한 프로젝트
-- [로그인 페이지](https://gubbib.github.io/2024WinterProject/index.html)
+
+## 페이지 링크
+- 서버 연결 안한 페이지
+[로그인 페이지](https://gubbib.github.io/2024WinterProject/WinterStydy/src/main/resources/static/index.html)
 
 ## 기간
 - 2024년 12월 31일 ~ ####년 ##월 ##일
