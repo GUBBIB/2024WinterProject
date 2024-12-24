@@ -18,7 +18,8 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// 아직 데이터베이스 설정을 안해서 주석처리
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	// 스프링 시큐리티가 무조건적으로 막아서 일단 주석처리 
 //	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
