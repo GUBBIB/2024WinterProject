@@ -15,13 +15,12 @@
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
 - Spring Web <br>
-ㅇㄴㄻ
-- Spring Data JPA
-- MySQL Driver
-- Spring Security
-- Thymeleaf
-- Spring Boot DevTools(Optional)
-- Validatio(Optional)
+- Spring Data JPA <br>
+- MySQL Driver <br>
+- Spring Security <br>
+- Thymeleaf <br>
+- Spring Boot DevTools(Optional) <br>
+- Validatio(Optional) <br>
 
 ## 페이지 뷰
 ![로그인 페이지](https://github.com/user-attachments/assets/e18d06dc-95f4-487a-b67c-8fcbdef73af8)
