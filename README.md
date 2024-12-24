@@ -1,4 +1,4 @@
-# 2024 겨울방학 간단학 프로젝트
+# 2024 겨울방학 간단한 프로젝트
 - [로그인 페이지](https://gubbib.github.io/2024WinterProject/index.html)
 
 ## 기간
