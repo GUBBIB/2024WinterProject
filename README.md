@@ -13,18 +13,25 @@
 
 ## 기술 스택
 - **Backend**: Spring Boot
-- **Frontend**: HTMl, CSS, JavaScript
+- **Frontend**: HTMl, CSS, JavaScript, Thymeleaf
 - **DataBase**: MySQL
 - **IDE**: IntelliJ IDEA
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
 - Spring Web <br>
+내장 서버를 사용하기 위해 추가했습니다.
 - Spring Data JPA <br>
+데이터베이스와 어플리케이션 간의 데이터 저장 및 조회 작업을 간단하게 구현하기 위해 추가했습니다.
 - MySQL Driver <br>
+MySQL과 연결하기위해 추가했습니다.
 - Spring Security <br>
+어플리케이션의 인증, 권한 관리를 처리하기 위해 추가했습니다.
 - Thymeleaf <br>
+동적 웹 페이지를 작성하기 위해서 추가했습니다.
 - Spring Boot DevTools(Optional) <br>
+서버 실행 중 코드 수정시 자동으로 재시작되게 해줍니다. 생산성을 높이기 위해 추가했습니다.
 - Validatio(Optional) <br>
+입력 값이 올바른지 확인하기 위해 추가했습니다.
 
 ## 페이지 뷰
 ![로그인 페이지](https://github.com/user-attachments/assets/e18d06dc-95f4-487a-b67c-8fcbdef73af8)
@@ -33,6 +40,7 @@
 ## 추가 예정 사항
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
 - 로그인 페이지 작성 ( 2024-12-25 완료 )
+- 웹 어플리케이션 호스팅
 - 회원가입 페이지 작성
 - 게시판 페이지 작성
 - ERD 설계 및 DB 연결
