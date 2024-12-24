@@ -14,8 +14,8 @@
 - **DataBase**: MySQL
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
-### Spring Web
-- ㄴㅇ
+- Spring Web
+ㄴ ㅇㄴㄻ
 - Spring Data JPA
 - MySQL Driver
 - Spring Security
