@@ -15,6 +15,7 @@
 - **Backend**: Spring Boot
 - **Frontend**: HTMl, CSS, JavaScript
 - **DataBase**: MySQL
+- **IDE**: IntelliJ IDEA
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
 - Spring Web <br>
@@ -30,6 +31,7 @@
 
 
 ## 추가 예정 사항
+- 스트링 부트 파일 생성 ( 2024-12-25 완료 )
 - 로그인 페이지 작성 ( 2024-12-25 완료 )
 - 회원가입 페이지 작성
 - 게시판 페이지 작성
@@ -40,4 +42,5 @@
 - [[Spring-Boot] Spring-boot 프로젝트 생성 / 빌드/ 실행](https://8156217.tistory.com/68)
 - [[백엔드] 스프링 개발 입문 느낀점 및 요약 - yssgood.log](https://velog.io/@yssgood/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B0%9C%EB%B0%9C-%EC%9E%85%EB%AC%B8-%EB%8A%90%EB%82%80%EC%A0%90-%EB%B0%8F-%EC%9A%94%EC%95%BD)
 - [[Spring Boot] 타임리프(Thymeleaf) - 유광진](https://velog.io/@kwangjin5468/Thymeleaf)
+- [Springboot 시작할때 APPLICATION FAILED TO START](https://hsmang.tistory.com/22)
 - ChatGPT
