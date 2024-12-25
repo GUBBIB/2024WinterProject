@@ -41,7 +41,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
 
 ## 추가 사항
-- 포트 충돌로 8081로 변경
+- 포트 충돌로 인해서 8081로 변경
 - resetart.sh<br>
 아래의 코드 추가로 ``백그라운드로 서버``를 돌릴 수 있게 만들었습니다.
 <pre><code>
