@@ -36,7 +36,8 @@ MySQL과 연결하기위해 추가했습니다.
 입력 값이 올바른지 확인하기 위해 추가했습니다.
 
 ## 페이지 뷰
-![로그인 페이지](https://github.com/user-attachments/assets/e18d06dc-95f4-487a-b67c-8fcbdef73af8)
+![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
+
 
 
 ## 추가 예정 사항
