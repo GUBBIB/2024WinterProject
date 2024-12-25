@@ -40,7 +40,8 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ## 페이지 뷰
 ![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
 
-## 서버 컴퓨터 추가 파일
+## 추가 사항
+- 포트 충돌로 8081로 변경
 - resetart.sh<br>
 아래의 코드 추가로 ``백그라운드로 서버``를 돌릴 수 있게 만들었습니다.
 <pre><code>
@@ -79,7 +80,7 @@ echo "Starting the new server..."
 echo "Deployment complete. Logs can be found in app.log."
 </code></pre>
 
-## 추가 예정 사항
+## 추가할 기능
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
 - 로그인 페이지 작성 ( 2024-12-25 완료 )
 - 웹 어플리케이션 호스팅 ( 2024-12-25 완료 )
@@ -97,4 +98,5 @@ echo "Deployment complete. Logs can be found in app.log."
 - [[배포] AWS를 통한 배포 방법 알아보기(EC2 서버 실행)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0EC2-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89)
 - [[AWS] 인스턴스 SSH 접속 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
 - [[AWS] EC2 인스턴스를 시작하거나 실행할 때 발생하는 InsufficientInstanceCapacity 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
+- [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
 - ChatGPT
