@@ -41,8 +41,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
 
 ## 서버 컴퓨터 추가 파일
-- resetart.sh
-아래의 코드 추가로 백그라운드로 서버를 돌릴 수 있게 만들었습니다.
+- resetart.sh || 아래의 코드 추가로 백그라운드로 서버를 돌릴 수 있게 만들었습니다.
 <pre><code>
 #!/bin/bash
 
@@ -59,8 +58,7 @@ echo $1
 nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > /dev/null 2>&1 &
 </code></pre>
 
-- deploy.sh
-위 코드 추가로 1. 실행 중인 서버 종료 2. 깃허브에서 수정사항 업데이트 3. 새로 gradlew biuld 4. 백그라운드로 서버를 실행 시키는 restart.sh 실행 이 4가지 작업을 자동으로 해주는 파일을 만들었습니다.
+- deploy.sh | 위 코드 추가로 1. 실행 중인 서버 종료 2. 깃허브에서 수정사항 업데이트 3. 새로 gradlew biuld 4. 백그라운드로 서버를 실행 시키는 restart.sh 실행 이 4가지 작업을 자동으로 해주는 파일을 만들었습니다.
 <pre><code>
 #!/bin/bash
 
