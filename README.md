@@ -2,7 +2,7 @@
 
 ## 페이지 링크
 - AWS 배포 페이지 
-[메인 페이지 - 서버 연결 O](http://ec2-16-16-201-86.eu-north-1.compute.amazonaws.com:8080/)
+[메인 페이지 - 서버 연결 O](http://ec2-16-16-201-86.eu-north-1.compute.amazonaws.com:8081/)
 - 서버 연결 안한 페이지
 [메인 페이지 - 서버 연결 X](https://gubbib.github.io/2024WinterProject/WinterProject2024/src/main/resources/static/index.html)
 
@@ -40,7 +40,44 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ## 페이지 뷰
 ![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
 
+## 서버 컴퓨터 추가 파일
+- resetart.sh
+<code>
+#!/bin/bash
 
+ps -ef | grep "WinterProject2024-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}' | xargs kill -9 2> /dev/null
+
+if [ $? -eq 0 ];then
+    echo "my-application Stop Success"
+else
+    echo "my-application Not Running"
+fi
+
+echo "my-application Restart!"
+echo $1
+nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > /dev/null 2>&1 &
+</code><br>
+위 코드 추가로 백그라운드로 서버를 돌릴 수 있게 만들었습니다.
+
+- deploy.sh
+<code>
+#!/bin/bash
+
+echo "Stopping current server..."
+pkill -f 'java -jar'
+
+echo "Pulling latest code..."
+git pull origin main
+
+echo "Building the project..."
+./gradlew build
+
+echo "Starting the new server..."
+./restart.sh
+
+echo "Deployment complete. Logs can be found in app.log."
+</code><br>
+위 코드 추가로 1. 실행 중인 서버 종료 2. 깃허브에서 수정사항 업데이트 3. 새로 gradlew biuld 4. 백그라운드로 서버를 실행 시키는 restart.sh 실행 이 4가지 작업을 자동으로 해주는 파일을 만들었습니다.
 
 ## 추가 예정 사항
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
