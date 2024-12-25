@@ -7,7 +7,7 @@
 [메인 페이지 - 서버 연결 X](https://gubbib.github.io/2024WinterProject/WinterStydy/src/main/resources/static/index.html)
 
 ## 기간
-- 2024년 12월 31일 ~ ####년 ##월 ##일
+- 2024년 12월 25일 ~ ####년 ##월 ##일
 
 ## 프로젝트 설명
 이 프로젝트는 Spring Boot를 사용하여 로그인, 회원가입, 게시판 기능을 구현한 웹 페이지입니다.
