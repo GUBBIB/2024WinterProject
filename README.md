@@ -2,7 +2,7 @@
 
 ## 페이지 링크
 - AWS 배포 페이지 
-[메인 페이지 - 서버 연결 O](http://ec2-13-48-5-125.eu-north-1.compute.amazonaws.com:8080/)
+[메인 페이지 - 서버 연결 O](http://ec2-16-16-201-86.eu-north-1.compute.amazonaws.com:8080/)
 - 서버 연결 안한 페이지
 [메인 페이지 - 서버 연결 X](https://gubbib.github.io/2024WinterProject/WinterStydy/src/main/resources/static/index.html)
 
