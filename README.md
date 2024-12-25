@@ -1,8 +1,10 @@
 # 2024 겨울방학 간단한 프로젝트
 
 ## 페이지 링크
+- AWS 배포 페이지 
+[메인 페이지 - 서버 연결 O](http://ec2-13-48-5-125.eu-north-1.compute.amazonaws.com:8080/)
 - 서버 연결 안한 페이지
-[메인 페이지](https://gubbib.github.io/2024WinterProject/WinterStydy/src/main/resources/static/index.html)
+[메인 페이지 - 서버 연결 X](https://gubbib.github.io/2024WinterProject/WinterStydy/src/main/resources/static/index.html)
 
 ## 기간
 - 2024년 12월 31일 ~ ####년 ##월 ##일
