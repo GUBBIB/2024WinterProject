@@ -1,13 +1,13 @@
-package WinterStudy.WinterStydy;
+package WinterProject.WinterProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WinterStydyApplication {
+public class WinterProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WinterStydyApplication.class, args);
+		SpringApplication.run(WinterProjectApplication.class, args);
 	}
 
 }

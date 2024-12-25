@@ -1,10 +1,10 @@
-package WinterStudy.WinterStydy;
+package WinterProject.WinterProject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WinterStydyApplicationTests {
+class WinterProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
