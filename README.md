@@ -60,7 +60,7 @@ nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profile
 </code></pre>
 
 - deploy.sh<br>
-아래의 코드추가로 ``실행 중인 서버 종료``, ``GitHub에서 수정 사항 업데이트``, ``gradlew build 실행``, 그리고 ``백그라운드에서 서버를 실행하는 restart.sh를 자동으로 실행`` 할 수 있게 만들었습니다.
+아래의 코드추가로 ``실행 중인 서버 종료``, ``GitHub에서 수정 사항 업데이트``, ``gradlew build 실행``, ``restart.sh 실행``을 자동으로 할 수 있게 코드를 추가했습니다.
 <pre><code>
 #!/bin/bash
 
