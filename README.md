@@ -34,6 +34,8 @@ MySQL과 연결하기위해 추가했습니다.
 서버 실행 중 코드 수정시 자동으로 재시작되게 해줍니다. 생산성을 높이기 위해 추가했습니다.
 - Validatio(Optional) <br>
 입력 값이 올바른지 확인하기 위해 추가했습니다.
+- Lombok <br>
+Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했습니다.
 
 ## 페이지 뷰
 ![메인 페이지](https://github.com/user-attachments/assets/866130f8-41dc-43b0-bd44-d77a765bfcef)
