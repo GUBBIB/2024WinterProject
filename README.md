@@ -39,8 +39,9 @@ MySQL과 연결하기위해 추가했습니다.
 Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했습니다.
 
 ## 페이지 뷰
+- 메인/로그인 페이지
 ![메인/로그인 페이지](https://github.com/user-attachments/assets/d5c5ea96-b506-4900-9ebd-0bab7e5cac35)
-
+- 회원가입 페이지
 ![회원가입 페이지](https://github.com/user-attachments/assets/e1d2c34f-286c-439d-8cb3-039ac49d9a99)
 
 ## 추가 사항
