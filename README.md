@@ -114,7 +114,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
 </details>
 
-<details>
+<details open>
     <summary>MySQL</summary>
 
 - [EC2 Ubuntu 인스턴스 생성부터 Java, Mysql 설치 및 외부접속하기](https://dev-chw.tistory.com/32)
