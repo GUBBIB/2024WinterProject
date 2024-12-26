@@ -113,4 +113,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
 </details>
 
+<details open>
+    <summary>Chat-GPT</summary>
 - ChatGPT
+</details>
