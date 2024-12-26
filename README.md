@@ -86,11 +86,11 @@ echo "Deployment complete. Logs can be found in app.log."
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
 - 로그인 페이지 작성 ( 2024-12-25 완료 )
 - 웹 어플리케이션 호스팅[ http ] ( 2024-12-25 완료 )
-- 웹 어플리케이션 호스팅[ https ]
 - 회원가입 페이지 작성 ( 2024-12-26 완료 )
+- DB 설치 및 MySql WorkBench 연결 ( 2024-12-27 완료 )
+- 웹 어플리케이션 호스팅[ https ]
 - 게시판 페이지 작성
 - ERD 설계
-- DB 설치 및 MySql WorkBench 연결 ( 2024-12-27 완료 )
 - Admin 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
 
 ## 참고한 곳
