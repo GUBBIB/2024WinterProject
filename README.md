@@ -14,7 +14,7 @@
 ## 기술 스택
 - **Backend**: Spring Boot
 - **Frontend**: HTMl, CSS, JavaScript, Thymeleaf
-- **DataBase**: MySQL
+- **DataBase**: AWS(Amazone Web Service) - RDS(MySQL)
 - **IDE**: IntelliJ IDEA
 - **Cloud Service**: [AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
 
