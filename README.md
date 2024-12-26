@@ -115,5 +115,6 @@ echo "Deployment complete. Logs can be found in app.log."
 
 <details open>
     <summary>Chat-GPT</summary>
+    
 - ChatGPT
 </details>
