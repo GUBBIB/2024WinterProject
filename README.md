@@ -121,7 +121,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - [aws ec2 인스턴스(우분투 서버)에 MySQL Workbench 연동](https://bj-turtle.tistory.com/35)
 </details>
 
-<details>
+<details open>
     <summary>Chat-GPT</summary>
 
 - ChatGPT
