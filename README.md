@@ -3,8 +3,6 @@
 ## 페이지 링크
 - AWS 배포 페이지 
 [메인 페이지 - 서버 연결 O](http://ec2-16-16-201-86.eu-north-1.compute.amazonaws.com:8081/)
-- 서버 연결 안한 페이지
-[메인 페이지 - 서버 연결 X](https://gubbib.github.io/2024WinterProject/WinterProject2024/src/main/resources/static/index.html)
 
 ## 기간
 - 2024년 12월 25일 ~ ####년 ##월 ##일
