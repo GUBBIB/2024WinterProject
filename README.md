@@ -93,7 +93,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - Admin 계정 생성(모든 게시글, 댓글 삭제 가능)
 
 ## 참고한 곳
-<details>
+<details open>
     <summary>스프링 부트</summary>
 
 - [[Spring-Boot] Spring-boot 프로젝트 생성 / 빌드/ 실행](https://8156217.tistory.com/68)
@@ -103,7 +103,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - [[스프링부트 4] Spring MVC Controller 만들기 1탄](https://shallow-learning.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-4-Spring-MVC-Controller-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 </details>
 
-<details>
+<details open>
     <summary>AWS(Amazone Web Service)</summary>
 
 - [[배포] AWS를 통한 배포 방법 알아보기(인스턴스 생성과 연결)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EA%B3%BC-%EC%97%B0%EA%B2%B0)
