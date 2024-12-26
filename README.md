@@ -18,7 +18,7 @@
 - **Frontend**: HTMl, CSS, JavaScript, Thymeleaf
 - **DataBase**: MySQL
 - **IDE**: IntelliJ IDEA
-- **Cloud Service**: AWS - Ubuntu
+- **Cloud Service**: [AWS - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
 - Spring Web <br>
