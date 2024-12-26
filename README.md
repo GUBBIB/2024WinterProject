@@ -91,7 +91,7 @@ echo "Deployment complete. Logs can be found in app.log."
 - 게시판 페이지 작성
 - ERD 설계
 - DB 설치 및 MySql WorkBench 연결 ( 2024-12-27 완료 )
-- Admin 계정 생성(모든 게시글, 댓글 삭제 가능)
+- Admin 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
 
 ## 참고한 곳
 <details open>
@@ -112,6 +112,13 @@ echo "Deployment complete. Logs can be found in app.log."
 - [[AWS] 인스턴스 SSH 접속 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
 - [[AWS] EC2 인스턴스를 시작하거나 실행할 때 발생하는 InsufficientInstanceCapacity 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
 - [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
+</details>
+
+<details>
+    <summary>MySQL</summary>
+
+- [EC2 Ubuntu 인스턴스 생성부터 Java, Mysql 설치 및 외부접속하기](https://dev-chw.tistory.com/32)
+- [aws ec2 인스턴스(우분투 서버)에 MySQL Workbench 연동](https://bj-turtle.tistory.com/35)
 </details>
 
 <details>
