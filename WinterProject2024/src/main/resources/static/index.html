@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
 </head>
 <body>
 <div id="inputSection">
@@ -23,12 +23,14 @@
 
             <div id="PassSection">
                 <label>
-                    Passward <input type="passward" name="" id="">
+                    Password <input type="password" name="" id="">
                 </label>
             </div>
-            <input type="submit" value="로그인"> <input type="button" value="회원가입">
+            <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
         </div>
     </form>
+
+    <script src="script.js"></script>
 </div>
 </body>
 </html>
