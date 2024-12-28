@@ -36,6 +36,11 @@ MySQL과 연결하기위해 추가했습니다.
 - Lombok <br>
 Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했습니다.
 
+## ERD
+- ERD(Entity Relationship Diagram)
+![ERD](https://github.com/user-attachments/assets/9df92d71-aac7-459d-91eb-c6fd6013cb6e)
+
+
 ## 페이지 뷰
 - 메인/로그인 페이지
 ![메인/로그인 페이지](https://github.com/user-attachments/assets/d5c5ea96-b506-4900-9ebd-0bab7e5cac35)
