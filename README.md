@@ -50,10 +50,11 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ## 추가 사항
 - 포트 충돌로 인해서 포트번호를 8081로 변경
 - resetart.sh<br>
-``백그라운드로 서버``를 돌릴 수 있게 코드를 추가했습니다.
+서버를 ``강제 종료`` 하여 ``재시작``을 해야 할 때를 위해 ``종료`` 및 ``실행`` 코드를 추가했습니다.
 <pre><code>
 #!/bin/bash
 
+# 기존 서버 종료
 ps -ef | grep "WinterProject2024-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}' | xargs kill -9 2> /dev/null
 
 if [ $? -eq 0 ];then
@@ -64,6 +65,8 @@ fi
 
 echo "my-application Restart!"
 echo $1
+
+# 서버 실행
 nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > /dev/null 2>&1 &
 </code></pre>
 
