@@ -2,7 +2,7 @@
 
 ## 페이지 링크
 - AWS 배포 페이지 
-[메인 페이지 - 서버 연결 O](http://ec2-51-20-189-26.eu-north-1.compute.amazonaws.com:8081/)
+[메인 페이지 - 서버 연결 O](http://ec2-13-50-5-134.eu-north-1.compute.amazonaws.com:8081/)
 
 ## 기간
 - 2024년 12월 25일 ~ ####년 ##월 ##일
@@ -49,6 +49,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 
 ## 추가 사항
 - 포트 충돌로 인해서 포트번호를 8081로 변경
+- 우분투의 메모리 용량이 부족하여 ``./gradlew build``시 컴퓨터가 계속 멈춰, Swap 메모리 2GB 설정
 - resetart.sh<br>
 서버를 ``강제 종료`` 하여 ``재시작``을 해야 할 때를 위해 ``종료`` 및 ``실행`` 코드를 추가했습니다.
 <pre><code>
@@ -76,30 +77,30 @@ nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profile
 <pre><code>
 #!/bin/bash
 
-# 기존 서버 종료
+# 실행 중이던 서버 종료
 echo "Stopping current server..."
 ps -ef | grep "WinterProject2024-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}' | xargs kill -9 2> /dev/null
 
 if [ $? -eq 0 ]; then
     echo "Server stopped successfully."
 else
-    echo "No running server found."
+    echo "!!! No running server found."
 fi
 
 # 최신 코드 pull
 echo "Pulling latest code..."
 git pull origin main
 
-# No Daemon으로 Gradle 빌드 빌드 로그를 1초마다 출력
+# Gradle 빌드
 echo "Building the project..."
-watch -n 1 'tail -n 10 build.log' & 
-./gradlew build --no-daemon > build.log 2>&1
+./gradlew build > build.log 2>&1
+
 if [ $? -ne 0 ]; then
-    echo "Build failed. Check build.log for details."
+    echo "!!! Build failed. Check build.log for details."
     exit 1
 fi
 
-# 서버 실행 및 로그 저장
+# 서버 실행
 echo "Starting the new server..."
 nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > app.log 2>&1 &
 
@@ -107,7 +108,7 @@ nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profile
 if [ $? -eq 0 ]; then
     echo "Server started successfully. Logs can be found in app.log."
 else
-    echo "Failed to start the server. Check app.log for more details."
+    echo "!!! Failed to start the server. Check app.log for more details."
 fi
 </code></pre>
 
@@ -120,7 +121,7 @@ fi
 - ERD 설계 ( 2024-12-28 완료 )
 - 웹 어플리케이션 호스팅[ https ]
 - 게시판 페이지 작성
-- Admin 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
+- 관리자 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
 - 실시간 채팅 기능
 - 회원 탈퇴 기능
 
@@ -143,6 +144,12 @@ fi
 - [[AWS] 인스턴스 SSH 접속 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
 - [[AWS] EC2 인스턴스를 시작하거나 실행할 때 발생하는 InsufficientInstanceCapacity 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
 - [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
+</details>
+
+<details open>
+    <summary>리눅스/우분투(Linux/Ubuntu)</summary>
+
+- [[Linux / ubuntu] AWS Ubuntu 20.04에 swap 메모리 설정하기, Freetier 메모리 부족 현상 해결](https://innovation123.tistory.com/200)
 </details>
 
 <details open>
