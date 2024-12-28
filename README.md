@@ -134,6 +134,7 @@ fi
 - [[Spring Boot] 타임리프(Thymeleaf) - 유광진](https://velog.io/@kwangjin5468/Thymeleaf)
 - [Springboot 시작할때 APPLICATION FAILED TO START - 세폴리아](https://hsmang.tistory.com/22)
 - [[스프링부트 4] Spring MVC Controller 만들기 1탄](https://shallow-learning.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-4-Spring-MVC-Controller-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+- [[JPA] 2. 엔티티 매핑 @어노테이션 정리/예제](https://cjw-awdsd.tistory.com/46)
 </details>
 
 <details open>
