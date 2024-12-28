@@ -2,7 +2,7 @@
 
 ## 페이지 링크
 - AWS 배포 페이지 
-[메인 페이지 - 서버 연결 O](http://ec2-13-61-16-121.eu-north-1.compute.amazonaws.com:8081/)
+[메인 페이지 - 서버 연결 O](http://ec2-51-20-189-26.eu-north-1.compute.amazonaws.com:8081/)
 
 ## 기간
 - 2024년 12월 25일 ~ ####년 ##월 ##일
@@ -72,19 +72,38 @@ nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profile
 <pre><code>
 #!/bin/bash
 
+# 기존 서버 종료
 echo "Stopping current server..."
-pkill -f 'java -jar'
+ps -ef | grep "WinterProject2024-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}' | xargs kill -9 2> /dev/null
 
+if [ $? -eq 0 ]; then
+    echo "Server stopped successfully."
+else
+    echo "No running server found."
+fi
+
+# 최신 코드 pull
 echo "Pulling latest code..."
 git pull origin main
 
+# No Daemon으로 Gradle 빌드
 echo "Building the project..."
-./gradlew build
+./gradlew build --no-daemon > build.log 2>&1
+if [ $? -ne 0 ]; then
+    echo "Build failed. Check build.log for details."
+    exit 1
+fi
 
+# 서버 실행 및 로그 저장
 echo "Starting the new server..."
-./restart.sh
+nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > app.log 2>&1 &
 
-echo "Deployment complete. Logs can be found in app.log."
+# 서버 시작 상태 확인
+if [ $? -eq 0 ]; then
+    echo "Server started successfully. Logs can be found in app.log."
+else
+    echo "Failed to start the server. Check app.log for more details."
+fi
 </code></pre>
 
 ## 추가할 기능
