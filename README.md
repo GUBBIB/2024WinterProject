@@ -119,6 +119,9 @@ echo "Deployment complete. Logs can be found in app.log."
 
 - [EC2 Ubuntu 인스턴스 생성부터 Java, Mysql 설치 및 외부접속하기](https://dev-chw.tistory.com/32)
 - [aws ec2 인스턴스(우분투 서버)에 MySQL Workbench 연동](https://bj-turtle.tistory.com/35)
+- [MySQL Workbench로 ERD다이어그램 생성](https://velog.io/@psj0810/MySQL-Workbench%EB%A1%9C-ERD%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%83%9D%EC%84%B1)
+- [MySQL Workbench - ERD 추출하여 그리기, 추출된 ERD를 이미지로 저장하기](https://luvris2.tistory.com/903)
+- [VARCHAR vs TEXT](https://medium.com/daangn/varchar-vs-text-230a718a22a1)
 </details>
 
 <details open>
