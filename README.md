@@ -163,7 +163,8 @@ fi
 </details>
 
 <details open>
-    <summary>Chat-GPT</summary>
+    <summary>etc</summary>
 
+- [TIL 29. 정규표현식(e-mail, password 유효성)](https://velog.io/@fall031/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D)
 - ChatGPT
 </details>
