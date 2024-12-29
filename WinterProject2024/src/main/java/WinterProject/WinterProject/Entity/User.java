@@ -5,8 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Getter @Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +16,6 @@ public class User {
     private String password;
     @Column(length = 50, nullable = false)
     private String name;
-    @Column(nullable = false)
+    @Column(length = 10, nullable = false)
     private String role;
 }
