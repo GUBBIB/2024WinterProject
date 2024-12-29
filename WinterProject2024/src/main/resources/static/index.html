@@ -1,36 +1,35 @@
-<!-- 로그인 페이지, 메인 페이지 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 페이지</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
     <link rel="stylesheet" href="css/mainStyle.css">
 </head>
 <body>
-<div id="inputSection">
-    <div>
-        Login
-    </div>
-
-    <form action="/login" method="post">
-        <div id="LoginSection">
-            <div id="IdSection">
-                <label>
-                    ID <input type="text" name="ID">
-                </label>
-            </div>
-
-            <div id="PassSection">
-                <label>
-                    Password <input type="password" name="Password">
-                </label>
-            </div>
-            <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
+    <div id="registerSection">
+        <div>
+            Register
         </div>
-    </form>
 
-    <script src="script.js"></script>
-</div>
+        <form>
+            <label>
+                이름 <input type="text" name="name">
+            </label>
+            <label>
+                이메일 <input type="email" name="email" pattern="^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="example@gmail.com">
+            </label>
+            <label>
+                ID <input type="text" name="user_id">
+            </label>
+            <label>
+                Password <input type="password" name="Password">
+            </label>
+
+            <input type="submit" value="회원가입">
+        </form>
+    </div>
 </body>
 </html>
