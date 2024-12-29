@@ -7,19 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class FirstController {
-    @GetMapping("/")
-    public String goToIndex(){
-        return "index";
-    }
     @GetMapping("/register")
     public String goToRegister(){
         return "register";
     }
 
-    @PostMapping("/register/save")
-    public String save(User user){
-        System.out.println(user.toString());
 
-        return "test";
-    }
 }
