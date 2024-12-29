@@ -12,5 +12,10 @@ public class FirstController {
         return "register";
     }
 
+    @PostMapping("/register/save")
+    public String save(User user){
+        System.out.println(user.toString());
 
+        return "test";
+    }
 }
