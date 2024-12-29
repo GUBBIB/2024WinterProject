@@ -112,13 +112,14 @@ else
 fi
 </code></pre>
 
-## 추가할 기능
+## 추가 예정/완료 기능
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
 - 로그인 페이지 작성 ( 2024-12-25 완료 )
 - 웹 어플리케이션 호스팅[ http ] ( 2024-12-25 완료 )
 - 회원가입 페이지 작성 ( 2024-12-26 완료 )
 - DB 설치 및 MySql WorkBench 연결 ( 2024-12-27 완료 )
-- ERD 설계 ( 2024-12-28 완료 )
+- ERD 설계( 2024-12-28 완료 )
+- 개체(Entity) 생성 ( 2024-12-30 완료 )
 - 웹 어플리케이션 호스팅[ https ]
 - 게시판 페이지 작성
 - 관리자 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
@@ -126,19 +127,6 @@ fi
 - 회원 탈퇴 기능
 
 ## 참고한 곳
-<details open>
-    <summary>스프링 부트</summary>
-
-- [[Spring-Boot] Spring-boot 프로젝트 생성 / 빌드/ 실행](https://8156217.tistory.com/68)
-- [[백엔드] 스프링 개발 입문 느낀점 및 요약 - yssgood.log](https://velog.io/@yssgood/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B0%9C%EB%B0%9C-%EC%9E%85%EB%AC%B8-%EB%8A%90%EB%82%80%EC%A0%90-%EB%B0%8F-%EC%9A%94%EC%95%BD)
-- [[Spring Boot] 타임리프(Thymeleaf) - 유광진](https://velog.io/@kwangjin5468/Thymeleaf)
-- [Springboot 시작할때 APPLICATION FAILED TO START - 세폴리아](https://hsmang.tistory.com/22)
-- [[스프링부트 4] Spring MVC Controller 만들기 1탄](https://shallow-learning.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-4-Spring-MVC-Controller-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-- [[JPA] 2. 엔티티 매핑 @어노테이션 정리/예제](https://cjw-awdsd.tistory.com/46)
-- [[JPA] 3. 엔티티 연관 관계 매핑 정리/예제](https://cjw-awdsd.tistory.com/47?category=806877)
-- [[Java] Spring Boot - JPA @PrePersist, @PreUpdate 사용하기](https://blog.naver.com/seek316/223353802740)
-</details>
-
 <details open>
     <summary>AWS(Amazone Web Service)</summary>
 
@@ -150,9 +138,26 @@ fi
 </details>
 
 <details open>
-    <summary>리눅스/우분투(Linux/Ubuntu)</summary>
+    <summary>스프링 부트</summary>
 
-- [[Linux / ubuntu] AWS Ubuntu 20.04에 swap 메모리 설정하기, Freetier 메모리 부족 현상 해결](https://innovation123.tistory.com/200)
+- [[Spring-Boot] Spring-boot 프로젝트 생성 / 빌드/ 실행](https://8156217.tistory.com/68)
+- [[백엔드] 스프링 개발 입문 느낀점 및 요약 - yssgood.log](https://velog.io/@yssgood/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B0%9C%EB%B0%9C-%EC%9E%85%EB%AC%B8-%EB%8A%90%EB%82%80%EC%A0%90-%EB%B0%8F-%EC%9A%94%EC%95%BD)
+- [[Spring Boot] 타임리프(Thymeleaf) - 유광진](https://velog.io/@kwangjin5468/Thymeleaf)
+- [Springboot 시작할때 APPLICATION FAILED TO START - 세폴리아](https://hsmang.tistory.com/22)
+- [[스프링부트 4] Spring MVC Controller 만들기 1탄](https://shallow-learning.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-4-Spring-MVC-Controller-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+</details>
+
+<details open>
+    <summary>JPA</summary>
+
+- [[JPA] 2. 엔티티 매핑 @어노테이션 정리/예제](https://cjw-awdsd.tistory.com/46)
+- [[JPA] 3. 엔티티 연관 관계 매핑 정리/예제](https://cjw-awdsd.tistory.com/47?category=806877)
+- [[Java] Spring Boot - JPA @PrePersist, @PreUpdate 사용하기](https://blog.naver.com/seek316/223353802740)
+- [[mariaDB] ERROR 1698 (28000): Access denied for user 'root'@'localhost' 문제 해결](https://velog.io/@hm5395/mariaDB-ERROR-1698-28000-Access-denied-for-user-rootlocalhost-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0)
+- [[Spring Boot] 사용자 입력 데이터 DB 저장! (Feat. JPA)](https://velog.io/@wijoonwu/JPA)
+- [Springboot 게시판 만들기 (4) - 게시글 작성 DB에 저장](https://baam-ki.tistory.com/29)
+- [[JPA] JPARepository에 대해 알아보자(+사용법, Method)](https://velog.io/@minju0426/JPARepository%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90%EC%82%AC%EC%9A%A9%EB%B2%95-Method)
+- ChatGPT
 </details>
 
 <details open>
@@ -163,6 +168,12 @@ fi
 - [MySQL Workbench로 ERD다이어그램 생성](https://velog.io/@psj0810/MySQL-Workbench%EB%A1%9C-ERD%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%83%9D%EC%84%B1)
 - [MySQL Workbench - ERD 추출하여 그리기, 추출된 ERD를 이미지로 저장하기](https://luvris2.tistory.com/903)
 - [VARCHAR vs TEXT](https://medium.com/daangn/varchar-vs-text-230a718a22a1)
+</details>
+
+<details open>
+    <summary>리눅스/우분투(Linux/Ubuntu)</summary>
+
+- [[Linux / ubuntu] AWS Ubuntu 20.04에 swap 메모리 설정하기, Freetier 메모리 부족 현상 해결](https://innovation123.tistory.com/200)
 </details>
 
 <details open>
