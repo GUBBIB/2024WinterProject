@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter @Setter
+@Table(name = "Comment")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
