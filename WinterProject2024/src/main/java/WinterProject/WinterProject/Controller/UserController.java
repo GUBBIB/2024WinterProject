@@ -30,11 +30,11 @@ public class UserController{
 
     @GetMapping("/register/error")
     public String erorr(){
-        return "error"
+        return "error";
     }
-    
+
     @GetMapping("/register/chk")
     public String chk(){
-        return "chk"
+        return "chk";
     }
 }
