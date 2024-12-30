@@ -25,6 +25,6 @@ public class User {
     }
 
     public String toString(){
-        return String.format("ID : %d email : %s password : %s name: %s\n", this.user_id, this.email, this.password, this.name);
+        return String.format("ID : %s email : %s password : %s name: %s\n", this.user_id, this.email, this.password, this.name);
     }
 }
