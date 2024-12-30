@@ -11,16 +11,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class UserController{
     @Autowired
-    private UserService userService;
+    private UserRepository userRepository;
 
     @PostMapping("/register/save")
     public String save(UserForm form, Model model){
         try {
-            userService.userSave(form);
+            User user = form.toEntity();
+            User saved = userRepository.save(user);
         } catch(Exception e){
             model.addAttribute("error", e.toString());
             return "redirect:error";
         }
-        return "redirect:/";
+        return "redirect:chk";
     }
 }

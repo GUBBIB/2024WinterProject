@@ -157,7 +157,6 @@ fi
 - [[Spring Boot] 사용자 입력 데이터 DB 저장! (Feat. JPA)](https://velog.io/@wijoonwu/JPA)
 - [Springboot 게시판 만들기 (4) - 게시글 작성 DB에 저장](https://baam-ki.tistory.com/29)
 - [[JPA] JPARepository에 대해 알아보자(+사용법, Method)](https://velog.io/@minju0426/JPARepository%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90%EC%82%AC%EC%9A%A9%EB%B2%95-Method)
-- ChatGPT
 </details>
 
 <details open>
