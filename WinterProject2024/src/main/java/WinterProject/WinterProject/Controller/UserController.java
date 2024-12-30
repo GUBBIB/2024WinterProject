@@ -22,6 +22,7 @@ public class UserController{
             User user = form.toEntity();
             User saved = userRepository.save(user);
         } catch(Exception e){
+            e.printStackTrace();
             model.addAttribute("error", e.toString());
             return "redirect:/error";
         }
