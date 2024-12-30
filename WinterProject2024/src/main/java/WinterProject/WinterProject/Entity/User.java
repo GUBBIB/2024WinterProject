@@ -17,8 +17,8 @@ public class User {
     private String password;
     @Column(length = 50, nullable = false)
     private String name;
-    @Column(length = 10)
-    private String role;
+    // @Column(length = 10)
+    // private String role;
 
     public String toString(){
         return String.format("ID : %d email : %s password : %s name: %s role : %s\n", this.user_id, this.email, this.password, this.name, this.role);
