@@ -19,7 +19,7 @@ public class User {
     // @Column(length = 10)
     // private String role;
 
-    public User(Long user_id, String email, String password, String name) {
+    public User(String user_id, String email, String password, String name) {
         this.user_id = user_id; this.email = email;
         this.password = password; this.name = name;
     }
