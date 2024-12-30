@@ -9,7 +9,7 @@ import lombok.Setter;
 @Table(name = "User")
 public class User {
     @Id
-    private Long user_id;
+    private String user_id;
     @Column(length = 100, nullable = false)
     private String email;
     @Column(length = 255, nullable = false)
