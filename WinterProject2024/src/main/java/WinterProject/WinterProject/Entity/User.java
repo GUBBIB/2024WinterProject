@@ -10,11 +10,11 @@ import lombok.Setter;
 public class User {
     @Id
     private String user_id;
-    @Column(length = 100, nullable = false)
+    @Column(length = 100)
     private String email;
-    @Column(length = 255, nullable = false)
+    @Column(length = 255)
     private String password;
-    @Column(length = 50, nullable = false)
+    @Column(length = 50)
     private String name;
     // @Column(length = 10)
     // private String role;
