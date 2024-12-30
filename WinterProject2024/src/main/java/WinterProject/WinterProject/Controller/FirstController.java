@@ -24,7 +24,7 @@ public class FirstController {
         try {
             userService.userSave(user);
         } catch(Exception e){
-            model.addAttribute("error", e.getMessage());
+            model.addAttribute("error", e.toString());
             return "redirect:error";
         }
         return "redirect:/";
