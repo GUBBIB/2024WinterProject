@@ -19,6 +19,11 @@ public class User {
     // @Column(length = 10)
     // private String role;
 
+    public User(Long user_id, String email, String password, String name) {
+        this.user_id = user_id; this.email = email;
+        this.password = password; this.name = name;
+    }
+
     public String toString(){
         return String.format("ID : %d email : %s password : %s name: %s\n", this.user_id, this.email, this.password, this.name);
     }
