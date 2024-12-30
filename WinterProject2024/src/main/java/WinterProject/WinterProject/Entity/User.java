@@ -9,7 +9,6 @@ import lombok.Setter;
 @Table(name = "User")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long user_id;
     @Column(length = 100, nullable = false)
     private String email;
