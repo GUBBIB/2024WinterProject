@@ -2,6 +2,7 @@ package WinterProject.WinterProject.Controller;
 
 import WinterProject.WinterProject.Entity.User;
 import WinterProject.WinterProject.Form.UserForm;
+import WinterProject.WinterProject.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
