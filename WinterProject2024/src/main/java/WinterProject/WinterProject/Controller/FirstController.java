@@ -20,7 +20,11 @@ public class FirstController {
 
     @PostMapping("/register/save")
     public String save(User user){
-        userService.userSave(user);
+        try {
+            userService.userSave(user);
+        } catch(Exception e){
+            return "redirect:error";
+        }
         return "redirect:/";
     }
 }
