@@ -8,6 +8,6 @@ import java.util.*;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, String> {
-    Optional<User> findByUserId(String user_id);
+    Optional<User> findByUserId(String userId);
 
 }
