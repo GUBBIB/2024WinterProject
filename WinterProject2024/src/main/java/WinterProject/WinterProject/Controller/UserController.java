@@ -30,7 +30,7 @@ public class UserController{
         return "error";
     }
 
-    @GetMapping("/register/chk")
+    @GetMapping("/chk")
     public String chk(){
         return "chk";
     }
