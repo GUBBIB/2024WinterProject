@@ -21,7 +21,7 @@ public class UserController{
         } catch(Exception e){
             model.addAttribute("error", e.toString());
         }
-        return "/register/error"
+        return "/register/error";
     }
 
     @GetMapping("/register/error")
