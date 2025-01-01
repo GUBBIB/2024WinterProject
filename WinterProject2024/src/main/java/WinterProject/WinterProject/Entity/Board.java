@@ -9,7 +9,8 @@ import lombok.Setter;
 @Table(name = "Board")
 public class Board {
     @Id
-    @GeneratedValue(name = "board_id", strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "board_id")
     private Long board_id;
     @Column(name = "board_name", length = 255, nullable = false)
     private String board_name;
