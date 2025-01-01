@@ -17,9 +17,8 @@ public class User {
     private String password;
     @Column(length = 50)
     private String name;
-    // @Column(length = 10)
-    // private String role;
 
+    
     public User() {}
 
     public User(String userId, String email, String password, String name) {
