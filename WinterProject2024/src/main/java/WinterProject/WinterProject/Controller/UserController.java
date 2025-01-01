@@ -28,7 +28,7 @@ public class UserController{
 
     // 로그인 기능
     @PostMapping("/login")
-    public String login(String user_id, String password){
+    public String login(@RequestParam String user_id, @RequestParam String password){
         if(!userService.chkUser(user_id, password)){
             return "error";
         }
