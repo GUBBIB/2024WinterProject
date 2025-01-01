@@ -128,7 +128,7 @@ fi
 
 ## 디버깅 과정
 <details>
-    <summary>스프링 부트(JPA)와 DB 데이터 저장 실패</summary>
+    <summary>DB 데이터 저장 실패</summary>
 
 `app.log`에 `Initiating transaction rollback`, `Rolling back JPA transaction on EntityManager [SessionImpl(1781951903<open>)]` `rolling back`이라는 문장이 있었고 Hibernate가 트랜잭션을 롤백했다는 사실을 알 수 있었습니다.
 
