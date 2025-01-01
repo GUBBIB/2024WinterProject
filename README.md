@@ -12,7 +12,7 @@
 회원가입 후 로그인을 통해서 게시글 작성 및 댓글을 작성하고 관리할 수 있으며 실시간 채팅이 가능합니다.
 
 ## 기술 스택
-- **Backend**: Spring Boot
+- **Backend**: Spring Boot 3.4.1
 - **Frontend**: HTMl, CSS, JavaScript, Thymeleaf
 - **DataBase**: MySQL - 8.0.40 [ 서버 컴퓨터 설치 - Workbench ]
 - **IDE**: IntelliJ IDEA
