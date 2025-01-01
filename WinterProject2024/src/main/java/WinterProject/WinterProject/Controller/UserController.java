@@ -14,7 +14,8 @@ public class UserController{
     @Autowired
     private UserService userService;
 
-    @PostMapping("/register/save")
+    // 사용자 저장
+    @PostMapping("/register/saveUser")
     public String save(User user, Model model){
         try {
             userService.saveUser(user);
@@ -22,13 +23,19 @@ public class UserController{
             model.addAttribute("error", e.toString());
             return "error";
         }
-        return "redirect:/chk";
+        return "redirect:/";
     }
 
-    @GetMapping("/register/error")
-    public String erorr(){
-        return "error";
+    // 로그인 기능
+    @PostMapping("/login")
+    public String login(String user_id, String password){
+        if(!userService.chkUser(user_id, password)){
+            return "error";
+        }
+        return "redirect/mainPage";
     }
+
+
 
     @GetMapping("/chk")
     public String chk(){
