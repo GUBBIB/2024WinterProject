@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.*;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, String> {
-    Optional<User> findByuser_id(String user_id);
+public interface UserRepository extends CrudRepository<users, String> {
+    Optional<users> findByuser_id(String user_id);
 
 }
