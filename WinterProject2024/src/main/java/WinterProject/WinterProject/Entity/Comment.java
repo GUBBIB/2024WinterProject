@@ -7,31 +7,31 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter @Setter
-@Table(name = "Comment")
+@Table(name = "Comments")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long comment_id;
+    private Long commentId;
     @ManyToOne
     @JoinColumn(nullable = false)
-    private Post post_id;
+    private Post postId;
     @ManyToOne
     @JoinColumn(nullable = false)
-    private User user_id;
+    private User userId;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
     @Column(updatable = false, nullable = false)
-    private LocalDateTime created_at;
+    private LocalDateTime createdAt;
     @Column(nullable = false)
-    private LocalDateTime updated_at;
+    private LocalDateTime updatedAt;
 
     @PrePersist
     protected void setDate(){
-        this.created_at = LocalDateTime.now();
-        this.updated_at = LocalDateTime.now();
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
     }
     @PreUpdate
     protected void updateDate(){
-        this.updated_at = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
     }
 }

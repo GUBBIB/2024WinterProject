@@ -10,9 +10,9 @@ import lombok.Setter;
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long board_id;
+    private Long boardId;
     @Column(length = 255, nullable = false)
-    private String board_name;
+    private String boardName;
     @Column(columnDefinition = "TEXT", nullable = false)
-    private String board_description;
+    private String boardDescription;
 }
