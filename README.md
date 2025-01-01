@@ -13,7 +13,7 @@
 
 ## 기술 스택
 - **Backend**: Spring Boot 3.4.1
-- **Frontend**: HTMl, CSS, JavaScript, Thymeleaf
+- **Frontend**: HTML, CSS, JavaScript, Thymeleaf
 - **DataBase**: MySQL - 8.0.40 [ 서버 컴퓨터 설치 - Workbench ]
 - **IDE**: IntelliJ IDEA
 - **Cloud Service**: [AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
