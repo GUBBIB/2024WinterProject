@@ -17,9 +17,9 @@ public class UserController{
 
     // 사용자 저장
     @PostMapping("/register/saveUser")
-    public String save(User user, Model model){
+    public String save(User users, Model model){
         try {
-            userService.saveUser(user);
+            userService.saveUser(users);
         } catch(Exception e){
             model.addAttribute("error", e.toString());
             return "error";

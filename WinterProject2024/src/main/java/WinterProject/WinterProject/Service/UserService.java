@@ -12,8 +12,8 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
-    public void saveUser(User user) {
-        userRepository.save(user);
+    public void saveUser(User users) {
+        userRepository.save(users);
     }
 
     public boolean chkUser(String userId, String password) {
