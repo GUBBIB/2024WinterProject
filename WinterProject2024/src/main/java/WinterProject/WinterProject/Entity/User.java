@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name = "User")
+@Table(name = "users")
 public class User {
     @Id
     private String user_id;
@@ -18,6 +18,8 @@ public class User {
     private String name;
     // @Column(length = 10)
     // private String role;
+
+    public User() {}
 
     public User(String user_id, String email, String password, String name) {
         this.user_id = user_id; this.email = email;
