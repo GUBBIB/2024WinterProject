@@ -20,8 +20,9 @@ public class UserController{
             userService.saveUser(user);
         } catch(Exception e){
             model.addAttribute("error", e.toString());
+            return "error";
         }
-        return "/register/error";
+        return "redirect:/chk";
     }
 
     @GetMapping("/register/error")
