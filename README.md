@@ -126,6 +126,18 @@ fi
 - 실시간 채팅 기능
 - 회원 탈퇴 기능
 
+## 디버깅 과정
+<details>
+    <summary>스프링 부트(JPA)와 DB 데이터 저장 실패</summary>
+
+`app.log`에 `Initiating transaction rollback`, `Rolling back JPA transaction on EntityManager [SessionImpl(1781951903<open>)]` `rolling back`이라는 문장이 있었고 Hibernate가 트랜잭션을 롤백했다는 사실을 알 수 있었습니다.
+
+그래서 User의 Entity가 정의된 User.java를 확인했고 테이블의 이름이 MySQL의 예약어인 `User`인게 문제였습니다.
+
+결론적으로 @Table(name = "users")로 변경하여 문제를 해결했습니다.
+
+</details>
+
 ## 참고한 곳
 <details open>
     <summary>AWS(Amazone Web Service)</summary>
