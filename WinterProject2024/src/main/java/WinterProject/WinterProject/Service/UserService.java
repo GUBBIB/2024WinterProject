@@ -16,8 +16,8 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public boolean chkUser(String user_id, String password) {
-        Optional<User> optionalUser = userRepository.findByuser_id(user_id);
+    public boolean chkUser(String userId, String password) {
+        Optional<User> optionalUser = userRepository.findByUserId(userId);
 
         if (optionalUser.isEmpty()) {
             return false;

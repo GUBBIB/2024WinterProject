@@ -17,8 +17,8 @@ public class Comment {
     @JoinColumn(name = "post_id", nullable = false)
     private Post post_idF;
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user_idF;
+    @JoinColumn(name = "userId", nullable = false)
+    private User userIdF;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
     @Column(name = "created_at", updatable = false, nullable = false)

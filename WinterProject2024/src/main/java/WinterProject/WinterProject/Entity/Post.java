@@ -18,8 +18,8 @@ public class Post {
     @JoinColumn(name = "board_id", nullable = false)
     private Board board_idF;
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user_idF;
+    @JoinColumn(name = "userId", nullable = false)
+    private User userIdF;
     @Column(length = 255, nullable = false)
     private String title;
     @Column(columnDefinition = "TEXT", nullable = false)
