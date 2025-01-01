@@ -130,7 +130,7 @@ fi
 <details>
     <summary>DB 데이터 저장 실패</summary>
 
-`app.log`에 `Initiating transaction rollback`, `Rolling back JPA transaction on EntityManager [SessionImpl(1781951903<open>)]` `rolling back`이라는 문장이 있었고 Hibernate가 트랜잭션을 롤백했다는 사실을 알 수 있었습니다.
+**app.log**에 `Initiating transaction rollback`, `Rolling back JPA transaction on EntityManager [SessionImpl(1781951903<open>)]`, `rolling back`이라는 문장이 있었고 Hibernate가 트랜잭션을 롤백했다는 사실을 알 수 있었습니다.
 
 그래서 User의 Entity가 정의된 User.java를 확인했고 테이블의 이름이 MySQL의 예약어인 `User`인게 문제였습니다.
 
