@@ -134,7 +134,7 @@ fi
 
 그래서 User의 Entity가 정의된 User.java를 확인했고 테이블의 이름이 MySQL의 예약어인 `User`인게 문제였습니다.
 
-결론적으로 `@Table(name = "users")`로 변경하여 문제를 해결했습니다.
+결론적으로 User.java에 어노테인션 `@Table(name = "users")`를 추가하여 문제를 해결했습니다.
 
 </details>
 
