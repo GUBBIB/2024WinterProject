@@ -15,10 +15,10 @@ public class Comment {
     private Long comment_id;
     @ManyToOne
     @JoinColumn(name = "post_id", nullable = false)
-    private Post post_id;
+    private Post post_idF;
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user_id;
+    private User user_idF;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
     @Column(name = "created_at", updatable = false, nullable = false)
