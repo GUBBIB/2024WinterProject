@@ -16,7 +16,7 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public boolean chkUser(String user_id, String password) {
+    public boolean chkUser(@RequestParam String user_id, @RequestParam String password) {
         Optional<User> optionalUser = userRepository.findById(user_id);
 
         if (optionalUser.isEmpty()) {
