@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'D2Coding';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Font/D2Coding-Ver1.3.2-20180524.ttf');
+    src: url('../Font/D2Coding-Ver1.3.2.ttc') format('truetype-collection');
+
+}
