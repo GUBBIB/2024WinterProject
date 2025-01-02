@@ -30,7 +30,7 @@ public class UserController{
         if(!userService.chkUser(userId, password)){
             return "error";
         }
-        return "redirect:/mainPage";
+        return "redirect/mainPage";
     }
 
     @GetMapping("/chk")
