@@ -19,11 +19,12 @@ public class UserService {
     public boolean chkUser(String userId, String password) {
         Optional<User> optionalUser = userRepository.findByUserId(userId);
 
-        if (optionalUser.isEmpty()) {
+        if (!optionalUser.isPresent()) {
             return false;
         }
 
         User user = optionalUser.get();
+        System.out.println(user.getPassword());
         if(!password.equals(user.getPassword())){
             return false;
         }
