@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MoveController {
     @GetMapping("/register")
-    public String goToRegister(){
-        return "register";
+    public String goToRegisterPage(){
+        return "RegisterPage";
     }
 
-    @GetMapping("/mainPage")
-    public String goToMainPage(){
-        return "mainPage";
+    @GetMapping("/login")
+    public String goToLoginPage(){
+        return "LoginPage";
     }
 }
