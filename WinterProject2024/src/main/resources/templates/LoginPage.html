@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="css/loginRegisterStyle.css">
 </head>
 <body>
-<div id="inputSection">
-    <div>
-        Login
-    </div>
-
-    <form action="/login" method="post">
-        <div id="LoginSection">
-            <div id="IdSection">
-                <label>
-                    ID <input type="text" name="userId">
-                </label>
-            </div>
-
-            <div id="PassSection">
-                <label>
-                    Password <input type="password" name="password">
-                </label>
-            </div>
-            <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
+    <div id="inputSection">
+        <div>
+            Login
         </div>
-    </form>
 
-    <script src="javascript/script.js"></script>
-</div>
+        <form action="/login" method="post">
+            <div id="LoginSection">
+                <div id="IdSection">
+                    <label>
+                        ID <input type="text" name="userId">
+                    </label>
+                </div>
+
+                <div id="PassSection">
+                    <label>
+                        Password <input type="password" name="password">
+                    </label>
+                </div>
+                <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
+            </div>
+        </form>
+
+        <script src="javascript/script.js"></script>
+    </div>
 </body>
 </html>
