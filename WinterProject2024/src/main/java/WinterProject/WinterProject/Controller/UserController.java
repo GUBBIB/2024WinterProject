@@ -24,7 +24,7 @@ public class UserController{
         return "redirect:/";
     }
 
-    // 로그인 기능 ※ Spring Security가 대체함
+    // 로그인 기능
     @PostMapping("/login")
     public String login(@RequestParam String userId, @RequestParam String password){
         if(!userService.chkUser(userId, password)){
