@@ -6,30 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>회원가입</title>
-    <link rel="stylesheet" href="css/loginRegisterStyle.css">
+    <link rel="stylesheet" href="css/mainPageStyle.css">
 </head>
 <body>
-    <div id="registerSection">
-        <div>
-            Register
+    <div id="Wrap">
+        <div id="HighSection">
+            <div id="Logo" class="inlineBlock">
+                <a href="/">
+                    <p>2024 Winter Project</p>
+                </a>
+            </div>
+            <div id="loginSection" class="inlineBlock">
+                <div id="loginBtn" onclick="goToLogin()">
+                    Login
+                </div>
+            </div>
         </div>
+        
+        <div id="registerSection">
+            <div>
+                Register
+            </div>
 
-        <form action="/register/saveUser" method="post">
-            <label>
-                이름 <input type="text" name="name">
-            </label>
-            <label>
-                이메일 <input type="email" name="email" placeholder="example@gmail.com">
-            </label>
-            <label>
-                ID <input type="text" name="userId">
-            </label>
-            <label>
-                Password <input type="password" name="password">
-            </label>
+            <form action="/register/saveUser" method="post">
+                <label>
+                    이름 <input type="text" name="name">
+                </label>
+                <label>
+                    이메일 <input type="email" name="email" placeholder="example@gmail.com">
+                </label>
+                <label>
+                    ID <input type="text" name="userId">
+                </label>
+                <label>
+                    Password <input type="password" name="password">
+                </label>
 
-            <input type="submit" value="회원가입">
-        </form>
+                <input type="submit" value="회원가입">
+            </form>
+        </div>
     </div>
 </body>
 </html>

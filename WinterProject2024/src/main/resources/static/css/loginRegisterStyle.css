@@ -12,37 +12,3 @@ html, body {
     align-items: center;
 }
 
-#inputSection, #registerSection {
-    width: 400px;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 4px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="text"], input[type="password"], input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-
-}
-
-input[type="submit"], input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #03DD61;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover, input[type="button"]:hover {
-    background-color: #03C958;
-}

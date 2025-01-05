@@ -5,32 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="css/loginRegisterStyle.css">
+    <link rel="stylesheet" href="css/mainPageStyle.css">
 </head>
 <body>
-<div id="inputSection">
-    <div>
-        Login
-    </div>
+    <div id="Wrap">
 
-    <form action="/login" method="post">
-        <div id="LoginSection">
-            <div id="IdSection">
-                <label>
-                    ID <input type="text" name="userId">
-                </label>
+        <div id="HighSection">
+            <div id="Logo" class="inlineBlock">
+                <a href="/">
+                    <p>2024 Winter Project</p>
+                </a>
             </div>
-
-            <div id="PassSection">
-                <label>
-                    Password <input type="password" name="password">
-                </label>
+            <div id="loginSection" class="inlineBlock">
+                <div id="loginBtn" onclick="goToLogin()">
+                    Login
+                </div>
             </div>
-            <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
         </div>
-    </form>
 
-    <script src="javascript/script.js"></script>
-</div>
+        <div id="inputSection">
+            <div>
+                Login
+            </div>
+
+            <form action="/login" method="post">
+                <div id="LoginSection">
+                    <div id="IdSection">
+                        <label>
+                            ID <input type="text" name="userId">
+                        </label>
+                    </div>
+
+                    <div id="PassSection">
+                        <label>
+                            Password <input type="password" name="password">
+                        </label>
+                    </div>
+                    <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
+                </div>
+            </form>
+
+        </div>
+    </div>
+<script src="javascript/script.js"></script>
 </body>
 </html>
