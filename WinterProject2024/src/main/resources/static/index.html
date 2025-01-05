@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout/default_layout">
-
-<head layout:fragment="head">
-    <title layout:title="Main Page">Main Page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/mainPageStyle.css">
 </head>
+<body>
 
-<th:block layout:fragment="content">
     <div id="Wrap">
-       <div id="mainSection">
+        <div id="HighSection">
+            <div id="Logo" class="inlineBlock">
+                <a href="/">
+                    <p>2024 Winter Project</p>
+                </a>
+            </div>
+            <div id="loginSection" class="inlineBlock">
+                <div id="loginBtn" onclick="goToLogin()">
+                    Login
+                </div>
+            </div>
+        </div>
+
+
+        <div id="mainSection">
             <div id="list" class="textCenter">
                 <ul>
                     <li class="inlineBlock"><a href="/chk">게시판</a></li>
-                    <li class="inlineBlock"><a href="#">채팅 방</a></li>
+                    <li class="inlineBlock"><a href="/error">채팅 방</a></li>
                 </ul>
             </div>
         </div>
+        
     </div>
-</th:block>
+
+    <script src="javascript/script.js"></script>
+</body>
 </html>

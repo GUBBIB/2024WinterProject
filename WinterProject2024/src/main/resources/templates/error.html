@@ -5,7 +5,24 @@
     <title>Error Page</title>
 </head>
 <body>
-오류 페이지에요 <br>
-<pre th:text="${error}"></pre>
+    <div id="Wrap">
+        <div id="HighSection">
+            <div id="Logo" class="inlineBlock">
+                <a href="/">
+                    <p>2024 Winter Project</p>
+                </a>
+            </div>
+            <div id="loginSection" class="inlineBlock">
+                <div id="loginBtn" onclick="goToLogin()">
+                    Login
+                </div>
+            </div>
+        </div>
+
+        오류 페이지에요 <br>
+        <pre th:text="${error}"></pre>
+    </div>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>
