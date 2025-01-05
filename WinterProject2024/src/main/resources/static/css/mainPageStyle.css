@@ -6,15 +6,17 @@
 
 html, body {
     height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 ul {
     list-style: none;
-
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 label {
@@ -27,7 +29,6 @@ input[type="text"], input[type="password"], input[type="email"] {
     padding: 8px;
     border: 1px solid black;
     border-radius: 4px;
-
 }
 
 input[type="submit"], input[type="button"] {
@@ -53,19 +54,10 @@ input[type="submit"]:hover, input[type="button"]:hover {
     text-align: center;
 }
 
-#mainSection {
-    margin-top: 10%;
-}
-
-#Logo {
-    font-size: 23px;
-    margin-left: 20px;
-}
-
 #HighSection {
     background-color: #0F0F0F;
     color: white;
-    padding: 8px 0px;
+    padding: 8px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,6 +65,11 @@ input[type="submit"]:hover, input[type="button"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+}
+
+#Logo {
+    font-size: 23px;
 }
 
 #loginBtnSection {
@@ -80,7 +77,7 @@ input[type="submit"]:hover, input[type="button"]:hover {
     background-color: white;
     color: black;
     border-radius: 10px;
-    padding: 3px 3px;
+    padding: 3px 8px;
     cursor: pointer;
 }
 
@@ -88,9 +85,28 @@ input[type="submit"]:hover, input[type="button"]:hover {
     background-color: #D4D4D4;
 }
 
-#inputSection, #registerSection {
+#Wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+}
+
+#inputSection {
     width: 400px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#inputSection div {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
