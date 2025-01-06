@@ -18,6 +18,6 @@ public class BoardController {
 
         List<Board> boards = boardService.getBoardList();
         model.addAttribute("boards", boards);
-        return "BoardPostPage";
+        return "redirect:/BoardPostPage";
     }
 }
