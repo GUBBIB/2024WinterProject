@@ -1,5 +1,6 @@
 package WinterProject.WinterProject.Controller;
 
+import org.springframework.stereotype.Controller;
 import WinterProject.WinterProject.Entity.Board;
 import WinterProject.WinterProject.Service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
+@Controller
 public class BoardController {
 
     @Autowired
@@ -15,9 +17,8 @@ public class BoardController {
 
     @GetMapping("/BoardPostPage")
     public String goToBoardPostPage(Model model){
-
         List<Board> boards = boardService.getBoardList();
         model.addAttribute("boards", boards);
-        return "redirect:/BoardPostPage";
+        return "BoardPostPage";
     }
 }
