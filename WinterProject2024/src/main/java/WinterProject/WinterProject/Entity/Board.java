@@ -10,10 +10,10 @@ import lombok.Setter;
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "board_id")
-    private Long board_id;
-    @Column(name = "board_name", length = 255, nullable = false)
-    private String board_name;
-    @Column(name = "board_description", columnDefinition = "TEXT", nullable = false)
-    private String board_description;
+    @Column(name = "boardId")
+    private Long boardId;
+    @Column(name = "boardName", length = 255, nullable = false)
+    private String boardName;
+    @Column(name = "boardDescription", columnDefinition = "TEXT", nullable = false)
+    private String boardDescription;
 }

@@ -12,11 +12,11 @@ import java.time.LocalDateTime;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "post_id")
-    private Long post_id;
+    @Column(name = "postId")
+    private Long postId;
     @ManyToOne
-    @JoinColumn(name = "board_id", nullable = false)
-    private Board board_idF;
+    @JoinColumn(name = "boardId", nullable = false)
+    private Board boardIdF;
     @ManyToOne
     @JoinColumn(name = "userId", nullable = false)
     private User userIdF;
@@ -26,18 +26,12 @@ public class Post {
     private String content;
     @Column(columnDefinition = "BIGINT DEFAULT 0", nullable = false)
     private Long views = 0L;
-    @Column(name = "created_at", updatable = false, nullable = false)
-    private LocalDateTime created_at;
-    @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updated_at;
+    @Column(name = "createdAt", updatable = false, nullable = false)
+    private LocalDateTime createdAt;
 
     @PrePersist
     protected void setDate(){
-        this.created_at = LocalDateTime.now();
-        this.updated_at = LocalDateTime.now();
+        this.createdAt = LocalDateTime.now();
     }
-    @PreUpdate
-    protected void updateDate(){
-        this.updated_at = LocalDateTime.now();
-    }
+
 }

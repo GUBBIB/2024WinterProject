@@ -11,28 +11,21 @@ import java.time.LocalDateTime;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "comment_id")
-    private Long comment_id;
+    @Column(name = "commentId")
+    private Long commentId;
     @ManyToOne
-    @JoinColumn(name = "post_id", nullable = false)
-    private Post post_idF;
+    @JoinColumn(name = "postId", nullable = false)
+    private Post postIdF;
     @ManyToOne
     @JoinColumn(name = "userId", nullable = false)
     private User userIdF;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
-    @Column(name = "created_at", updatable = false, nullable = false)
-    private LocalDateTime created_at;
-    @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updated_at;
+    @Column(name = "createdAt", updatable = false, nullable = false)
+    private LocalDateTime createdAt;
 
     @PrePersist
     protected void setDate(){
-        this.created_at = LocalDateTime.now();
-        this.updated_at = LocalDateTime.now();
-    }
-    @PreUpdate
-    protected void updateDate(){
-        this.updated_at = LocalDateTime.now();
+        this.createdAt = LocalDateTime.now();
     }
 }
