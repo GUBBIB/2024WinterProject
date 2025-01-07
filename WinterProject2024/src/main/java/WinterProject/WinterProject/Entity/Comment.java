@@ -15,9 +15,11 @@ public class Comment {
     private Long commentId;
     @ManyToOne
     @JoinColumn(name = "postId", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Post postIdF;
     @ManyToOne
     @JoinColumn(name = "userId", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private User userIdF;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;

@@ -16,9 +16,11 @@ public class Post {
     private Long postId;
     @ManyToOne
     @JoinColumn(name = "boardId", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Board boardIdF;
     @ManyToOne
     @JoinColumn(name = "userId", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private User userIdF;
     @Column(length = 255, nullable = false)
     private String title;
