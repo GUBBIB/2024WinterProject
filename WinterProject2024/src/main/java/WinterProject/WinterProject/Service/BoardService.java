@@ -25,7 +25,7 @@ public class BoardService {
         return boards;
     }
 
-    public Board createBoardS(String boardName, String boardDescription) {
+    public Board createBoard(String boardName, String boardDescription) {
         Board board = new Board();
         board.setBoardName(boardName);
         board.setBoardDescription(boardDescription);
