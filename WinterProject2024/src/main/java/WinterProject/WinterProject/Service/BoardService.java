@@ -24,4 +24,12 @@ public class BoardService {
         logger.debug("Fetched boards: {}", boards);
         return boards;
     }
+
+    public Board createBoardS(String boardName, String boardDescription) {
+        Board board = new Board();
+        board.setBoardName(boardName);
+        board.setBoardDescription(boardDescription);
+
+        return boardRepository.save(board);
+    }
 }
