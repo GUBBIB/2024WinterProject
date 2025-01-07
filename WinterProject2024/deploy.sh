@@ -10,9 +10,25 @@ else
     echo "!!! No running server found."
 fi
 
-# 최신 코드 pull
+# 최신 코드 가져오기 (로컬 변경 사항 삭제 후 강제 pull)
+echo "Resetting local changes..."
+git reset --hard HEAD
+if [ $? -ne 0 ]; then
+    echo "!!! Failed to reset local changes."
+    exit 1
+fi
+
 echo "Pulling latest code..."
 git pull origin main
+if [ $? -ne 0 ]; then
+    echo "!!! Failed to pull latest code."
+    exit 1
+fi
+
+# 권한 주기
+sudo chmod +x gradlew
+sudo chmod +x deploy.sh
+sudo chmod +x restart.sh
 
 # Gradle 빌드
 echo "Building the project..."
