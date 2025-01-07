@@ -34,7 +34,7 @@ public class BoardController {
     }
 
 
-    @PostMapping
+    @GetMapping("/boards")
     public Board createBoard(@RequestParam String boardName, @RequestParam String boardDescription){
         return boardService.createBoard(boardName, boardDescription);
     }
