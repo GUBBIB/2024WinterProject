@@ -19,7 +19,7 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping("/BoardPostPage")
+    @GetMapping("/testPage")
     public String goToBoardPostPage(Model model){
         List<Board> boards = boardService.getBoardList();
 
@@ -30,6 +30,6 @@ public class BoardController {
         }
 
         model.addAttribute("boards", boards);
-        return "BoardPostPage";
+        return "testPage";
     }
 }
