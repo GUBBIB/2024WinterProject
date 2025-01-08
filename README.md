@@ -60,6 +60,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 
 <details>
     <summary>1번 restart.sh 코드</summary>
+    
 resetart.sh<br>
 서버를 ``강제 종료`` 하여 ``재시작``을 해야 할 때를 위해 ``종료`` 및 ``실행`` 코드를 추가했습니다.
 <pre><code>
