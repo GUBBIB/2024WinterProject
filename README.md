@@ -71,6 +71,9 @@ echo $1
 nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > /dev/null 2>&1 &
 </code></pre>
 
+<details>
+    <summary>자동 Git pull, gradlew build, Server 실행 코드</summary>
+
 - deploy.sh<br>
 ``실행 중인 서버 종료``, ``GitHub에서 수정 사항 업데이트``, ``gradlew build 실행``, ``restart.sh 실행``을 자동으로 할 수 있게 코드를 추가했습니다.
 
@@ -114,6 +117,7 @@ else
     echo "!!! Failed to start the server. Check app.log for more details."
 fi
 </code></pre>
+</details>
 
 ## 추가 예정/완료 기능
 - 스트링 부트 파일 생성 ( 2024-12-25 완료 )
