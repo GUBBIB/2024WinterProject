@@ -17,11 +17,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# 권한 주기
-# sudo chmod +x gradlew
-# sudo chmod +x deploy.sh
-# sudo chmod +x restart.sh
-
 # Gradle 빌드
 echo "Building the project..."
 ./gradlew build > build.log 2>&1
