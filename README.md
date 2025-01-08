@@ -42,10 +42,14 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 
 
 ## 페이지 뷰
-- 메인/로그인 페이지
-![메인/로그인 페이지](https://github.com/user-attachments/assets/0da03a59-35bd-45a3-a9e7-98edd32afacf)
+- 메인 페이지
+![메인 페이지](https://github.com/user-attachments/assets/ed86a442-304b-4338-989d-c24a888d99b5)
+- 로그인 페이지
+![로그인 페이지](https://github.com/user-attachments/assets/285f0faa-8639-4f8b-93fb-503147261060)
 - 회원가입 페이지
-![회원가입 페이지](https://github.com/user-attachments/assets/52c899e1-b610-4f96-8df2-188e512e641a)
+![회원가입 페이지](https://github.com/user-attachments/assets/cefb5b3d-9f49-49b6-a2b8-8485a5bfd3c6)
+- 게시판 페이지
+![게시판 페이지](https://github.com/user-attachments/assets/9da5967c-7b96-4f0d-ac8b-dde8f5902a0b)
 
 ## 추가 사항
 - 포트 충돌로 인해서 포트번호를 8081로 변경
