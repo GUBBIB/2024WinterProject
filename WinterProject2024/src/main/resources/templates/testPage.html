@@ -25,7 +25,7 @@
     <div id="LeftSection">
         <ul>
             <li th:each="board : ${boards}">
-                <a th:href="@/BoardPostPage/{boardId}(boardId = ${board.boardId})" th:text="${board.boardName"></a>
+                <a th:href="|${/BoardPostPage/${boardId}}|" th:text="${board.boardName}"></a>
             </li>
         </ul>
     </div>
@@ -33,7 +33,6 @@
     <div id="RightSection">
         <iframe src=""></iframe>
     </div>
-
 </div>
 </body>
 </html>
