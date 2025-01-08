@@ -50,6 +50,9 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ## 추가 사항
 - 포트 충돌로 인해서 포트번호를 8081로 변경
 - 우분투의 메모리 용량이 부족하여 ``./gradlew build``시 컴퓨터가 계속 멈춰, Swap 메모리 2GB 설정
+- <details>
+    <summary>서버 강제종료 및 재시작 코드</summary>
+
 - resetart.sh<br>
 서버를 ``강제 종료`` 하여 ``재시작``을 해야 할 때를 위해 ``종료`` 및 ``실행`` 코드를 추가했습니다.
 <pre><code>
@@ -70,8 +73,9 @@ echo $1
 # 서버 실행
 nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev > /dev/null 2>&1 &
 </code></pre>
+</details>
 
-<details>
+- <details>
     <summary>자동 Git pull, gradlew build, Server 실행 코드</summary>
 
 - deploy.sh<br>
