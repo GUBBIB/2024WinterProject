@@ -52,7 +52,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 - 우분투의 메모리 용량이 부족하여 ``./gradlew build``시 컴퓨터가 계속 멈춰, Swap 메모리 2GB 설정
 - 서버 강제 종료 및 재시작 코드 추가 ※밑의 1번 details 참고
 - 서버 종료, Git pull, Gradlew build, 서버 실행 자동화 코드 추가 ※밑의 2번 details 참고
-- IntelliJ에서 DB 연결을 위해 서버 컴퓨터 UFW 활성화 및 MySQL cnf 파일 수정
+- IntelliJ에서 DB 연결을 위해 서버 컴퓨터 UFW 활성화 및 MySQL의 mysqld.cnf 파일 수정
 
 <details>
     <summary>1번 restart.sh 코드</summary>
