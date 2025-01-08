@@ -19,18 +19,11 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping("/testPage")
+    @GetMapping("/BoardPostPage")
     public String goToBoardPostPage(Model model){
         List<Board> boards = boardService.getBoardList();
-
-        if (boards.isEmpty()) {
-            logger.warn("No boards found in database.");
-        } else {
-            logger.debug("Boards retrieved: {}", boards);
-        }
-
         model.addAttribute("boards", boards);
-        return "testPage";
+        return "BoardPostPage";
     }
 
 
