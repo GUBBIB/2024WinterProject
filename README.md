@@ -52,8 +52,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 - 우분투의 메모리 용량이 부족하여 ``./gradlew build``시 컴퓨터가 계속 멈춰, Swap 메모리 2GB 설정
 - <details>
     <summary>서버 강제종료 및 재시작 코드</summary>
-
-- resetart.sh<br>
+resetart.sh<br>
 서버를 ``강제 종료`` 하여 ``재시작``을 해야 할 때를 위해 ``종료`` 및 ``실행`` 코드를 추가했습니다.
 <pre><code>
 #!/bin/bash
@@ -78,7 +77,7 @@ nohup java -jar build/libs/WinterProject2024-0.0.1-SNAPSHOT.jar --spring.profile
 - <details>
     <summary>자동 Git pull, gradlew build, Server 실행 코드</summary>
 
-- deploy.sh<br>
+deploy.sh<br>
 ``실행 중인 서버 종료``, ``GitHub에서 수정 사항 업데이트``, ``gradlew build 실행``, ``restart.sh 실행``을 자동으로 할 수 있게 코드를 추가했습니다.
 
 <pre><code>
