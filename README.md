@@ -3,6 +3,8 @@
 ## 페이지 링크
 - AWS 배포 페이지 
 [메인 페이지 - 서버 연결 O](http://ec2-13-50-5-134.eu-north-1.compute.amazonaws.com:8081/)
+- IntelliJ Test 서버
+[IntelliJ Test 서버](http://localhost:8081/)
 
 ## 기간
 - 2024년 12월 25일 ~ ####년 ##월 ##일
