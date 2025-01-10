@@ -6,3 +6,7 @@ function goToRegister(){
 function goToLogin(){
     window.location.href = "/login"
 }
+
+function goToBoardManagement(){
+    window.location.href= "/BoardManagement"
+}

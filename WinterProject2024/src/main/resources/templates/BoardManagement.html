@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Board Create Page</title>
+    <link rel="stylesheet" href="css/mainPageStyle.css">
+
+</head>
+<body>
+    <div id="Wrap">
+
+        <div id="HighSection">
+            <div id="Logo" class="inlineBlock">
+                <a href="/">
+                    <p>2024 Winter Project</p>
+                </a>
+            </div>
+            <div id="loginBtnSection" class="inlineBlock">
+                <div id="loginBtn" onclick="goToLogin()">
+                    Login
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="inputSection">
+                <div id="BoardCreateSection">
+                    게시판 생성
+                    <form action="/BoardManagement/BoardCreateFunction" method="post">
+                        <label>
+                            게시판 이름 <input type="text" name="boardName">
+                        </label>
+
+                        <label>
+                            게시판 설명 <input type="text" name="boardDescription">
+                        </label>
+
+                        <input type="submit" value="생성">
+                    </form>
+                </div>
+            </div>
+
+            <div id="removeSection">
+                <form action="/BoardManagement/BoardRemoveFunction" method="post">
+                    <label th:each="board : ${boards}">
+                        <input type="checkbox" name="boardIds" th:value="${board.boardId}">
+                        <span th:text="${board.boardName}"></span>
+                    </label>
+
+                    <input type="submit" value="삭제">
+                </form>
+            </div>
+        </div>
+
+    </div>
+<script src="javascript/script.js"></script>
+</body>
+</html>

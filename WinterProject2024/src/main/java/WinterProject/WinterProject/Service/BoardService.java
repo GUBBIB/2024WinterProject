@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BoardService {
@@ -19,17 +20,17 @@ public class BoardService {
 
 
     public List<Board> getBoardList(){
-
         List<Board> boards = boardRepository.findAll();
         logger.debug("Fetched boards: {}", boards);
         return boards;
     }
 
-    public Board createBoard(String boardName, String boardDescription) {
-        Board board = new Board();
-        board.setBoardName(boardName);
-        board.setBoardDescription(boardDescription);
+    public void removeBoardList(List<Long> boardIdList){
+        List<Board> deleteBoards = boardRepository.findAllById(boardIdList);
+        boardRepository.deleteAll(deleteBoards);
+    }
 
-        return boardRepository.save(board);
+    public void saveBoard(Board board) {
+        boardRepository.save(board);
     }
 }

@@ -15,4 +15,9 @@ public class MoveController {
     public String goToLoginPage(){
         return "LoginPage";
     }
+
+    @GetMapping("/ChatRoomPage")
+    public String goToChatRoom(){
+        return "ChatRoomPage";
+    }
 }

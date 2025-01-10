@@ -22,9 +22,7 @@ public class UserService {
         if (!optionalUser.isPresent()) {
             return false;
         }
-
         User user = optionalUser.get();
-        System.out.println(user.getPassword());
         if(!password.equals(user.getPassword())){
             return false;
         }

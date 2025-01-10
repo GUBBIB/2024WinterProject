@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -26,9 +27,29 @@ public class BoardController {
         return "BoardPostPage";
     }
 
+    @GetMapping("/BoardManagement")
+    public String goToBoardManagement(Model model){
+        List<Board> boards = boardService.getBoardList();
+        model.addAttribute("boards", boards);
+        return "BoardManagement";
+    }
 
-    @GetMapping("/boards")
-    public Board createBoard(@RequestParam String boardName, @RequestParam String boardDescription){
-        return boardService.createBoard(boardName, boardDescription);
+    @PostMapping("BoardManagement/BoardCreateFunction")
+    public String createBoard(Board board){
+        try {
+            boardService.saveBoard(board);
+        } catch (Exception e){
+            return "error";
+        }
+
+        return "redirect:/BoardPostPage";
+    }
+
+    @PostMapping("/BoardManagement/BoardRemoveFunction")
+    public String removeBoard(@RequestParam("boardIds") List<Long> removeList){
+
+        boardService.removeBoardList(removeList);
+
+        return "redirect:/BoardPostPage";
     }
 }
