@@ -93,12 +93,10 @@ input[type="submit"]:hover, input[type="button"]:hover {
     background-color: white;
 }
 
-#LoginSection, #registerSection, #BoardCreateSection {
+#LoginSection, #registerSection, #BoardCreateSection, #removeSection {
     width: 400px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 4px;
     background-color: white;
 }
-
-
