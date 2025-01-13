@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${board.boardName}">Board Content</title>
+    <link rel="stylesheet" href="/css/mainPageStyle.css">
+</head>
+<body>
+    tset
+    <ul>
+        <li th:each="post : #{posts}">
+            <a th:href="|/PostPage/${post.postId}|" th:text="${post.title}">게시글 제목</a>
+        </li>
+        test
+    </ul>
+</body>
+</html>

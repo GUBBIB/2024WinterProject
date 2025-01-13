@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter @Setter
 @Table(name = "users")
@@ -18,6 +20,10 @@ public class User {
     @Column(length = 50)
     private String name;
 
+    @OneToMany(mappedBy = "userIdF", cascade = CascadeType.ALL)
+    private List<Post> posts;
+    @OneToMany(mappedBy = "userIdF", cascade = CascadeType.ALL)
+    private List<Comment> comments;
     
     public User() {}
 

@@ -17,6 +17,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 label {
@@ -99,4 +100,14 @@ input[type="submit"]:hover, input[type="button"]:hover {
     padding: 20px;
     border-radius: 4px;
     background-color: white;
+}
+
+#LeftSection {
+    border: solid 1px black;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+#LeftSection li {
+    border-bottom: 1px solid black;
 }

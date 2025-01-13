@@ -18,6 +18,11 @@ public class BoardService {
 
     private static final Logger logger = LoggerFactory.getLogger(BoardService.class);
 
+    public Board getBoardById(Long boardId){
+        Board board = boardRepository.findById(boardId).orElse(new Board());
+
+        return board;
+    }
 
     public List<Board> getBoardList(){
         List<Board> boards = boardRepository.findAll();
@@ -33,4 +38,5 @@ public class BoardService {
     public void saveBoard(Board board) {
         boardRepository.save(board);
     }
+
 }

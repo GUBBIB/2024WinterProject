@@ -1,5 +1,7 @@
 package WinterProject.WinterProject.Controller;
 
+import WinterProject.WinterProject.Entity.Post;
+import WinterProject.WinterProject.Service.PostService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -9,16 +11,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class BoardController {
+public class BoardPostController {
 
-    private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
+    private static final Logger logger = LoggerFactory.getLogger(BoardPostController.class);
 
     @Autowired
     private BoardService boardService;
+    @Autowired
+    private PostService postService;
 
     @GetMapping("/BoardPostPage")
     public String goToBoardPostPage(Model model){
@@ -51,5 +54,16 @@ public class BoardController {
         boardService.removeBoardList(removeList);
 
         return "redirect:/BoardPostPage";
+    }
+
+    @GetMapping("/BoardPostPage/{boardId}")
+    public String iframeMove(@PathVariable("boardId") Long boardId, Model model){
+        Board board = boardService.getBoardById(boardId);
+        List<Post> post = postService.getPostList();
+
+        model.addAttribute("board", board);
+        model.addAttribute("posts", post);
+
+        return "BoardContent";
     }
 }

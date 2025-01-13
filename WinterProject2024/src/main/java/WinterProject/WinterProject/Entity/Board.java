@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter @Setter
 @Table(name = "board")
@@ -16,4 +19,7 @@ public class Board {
     private String boardName;
     @Column(name = "boardDescription", columnDefinition = "TEXT", nullable = false)
     private String boardDescription;
+
+    @OneToMany(mappedBy = "boardIdF", cascade = CascadeType.ALL)
+    private List<Post> posts = new ArrayList<>();
 }

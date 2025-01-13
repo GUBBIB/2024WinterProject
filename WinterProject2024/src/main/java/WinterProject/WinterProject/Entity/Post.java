@@ -7,6 +7,8 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter @Setter
@@ -17,11 +19,11 @@ public class Post {
     @Column(name = "postId")
     private Long postId;
     @ManyToOne
-    @JoinColumn(name = "boardId", nullable = false)
+    @JoinColumn(name = "boardIdF", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Board boardIdF;
     @ManyToOne
-    @JoinColumn(name = "userId", nullable = false)
+    @JoinColumn(name = "userIdF", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private User userIdF;
     @Column(length = 255, nullable = false)
@@ -32,6 +34,9 @@ public class Post {
     private Long views = 0L;
     @Column(name = "createdAt", updatable = false, nullable = false)
     private LocalDateTime createdAt;
+
+    @OneToMany(mappedBy = "postIdF", cascade = CascadeType.ALL)
+    private List<Comment> comments = new ArrayList<>();
 
     @PrePersist
     protected void setDate(){
