@@ -10,3 +10,8 @@ function goToLogin(){
 function goToBoardManagement(){
     window.location.href= "/BoardManagement"
 }
+
+function moveIframe(url){
+    let iframe = document.getElementById("boardIframe");
+    iframe.src = url;
+}
