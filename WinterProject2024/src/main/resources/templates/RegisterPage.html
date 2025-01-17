@@ -1,24 +1,31 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, users-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>회원가입</title>
     <link rel="stylesheet" href="/css/mainPageStyle.css">
 </head>
 <body>
     <div id="Wrap">
+
         <div id="HighSection">
             <div id="Logo" class="inlineBlock">
                 <a href="/">
                     <p>2024 Winter Project</p>
                 </a>
             </div>
-            <div id="loginBtnSection" class="inlineBlock">
-                <div id="loginBtn" onclick="goToLogin()">
-                    Login
+
+            <div class="ClassUserSection" sec:authorize="isAnonymous()" id="loginBtn" onclick="goToLogin()">
+                Login
+            </div>
+
+            <div id="IdUserSection" sec:authorize="isAuthenticated()">
+                <div class="ClassUserSection inlineBlock" th:text="${username}"></div>
+                <div class="ClassUserSection inlineBlock" id="logoutBtn" onclick="goToLogout()">
+                    Logout
                 </div>
             </div>
         </div>
@@ -28,7 +35,7 @@
                 Register
             </div>
 
-            <form action="/register/saveUser" method="post">
+            <form action="/register/saveUsers" method="post">
                 <label>
                     이름 <input type="text" name="name">
                 </label>

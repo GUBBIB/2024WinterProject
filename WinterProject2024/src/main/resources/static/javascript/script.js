@@ -4,7 +4,11 @@ function goToRegister(){
 }
 
 function goToLogin(){
-    window.location.href = "/login"
+    window.location.href = "/loginPage"
+}
+
+function goToLogout(){
+    window.location.href = "/logout"
 }
 
 function goToBoardManagement(){

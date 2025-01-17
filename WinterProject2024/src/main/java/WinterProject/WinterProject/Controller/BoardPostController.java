@@ -2,8 +2,6 @@ package WinterProject.WinterProject.Controller;
 
 import WinterProject.WinterProject.Entity.Post;
 import WinterProject.WinterProject.Service.PostService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import WinterProject.WinterProject.Entity.Board;
 import WinterProject.WinterProject.Service.BoardService;
@@ -15,8 +13,6 @@ import java.util.List;
 
 @Controller
 public class BoardPostController {
-
-    private static final Logger logger = LoggerFactory.getLogger(BoardPostController.class);
 
     @Autowired
     private BoardService boardService;

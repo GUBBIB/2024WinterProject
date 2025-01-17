@@ -20,6 +20,6 @@ public class Board {
     @Column(name = "boardDescription", columnDefinition = "TEXT", nullable = false)
     private String boardDescription;
 
-    @OneToMany(mappedBy = "boardIdF", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "boardIdFP", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();
 }

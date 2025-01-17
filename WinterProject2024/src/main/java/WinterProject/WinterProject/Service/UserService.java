@@ -1,6 +1,6 @@
 package WinterProject.WinterProject.Service;
 
-import WinterProject.WinterProject.Entity.User;
+import WinterProject.WinterProject.Entity.Users;
 import WinterProject.WinterProject.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,18 +12,18 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
-    public void saveUser(User users) {
+    public void saveUser(Users users) {
         userRepository.save(users);
     }
 
     public boolean chkUser(String userId, String password) {
-        Optional<User> optionalUser = userRepository.findByUserId(userId);
+        Optional<Users> optionalUser = userRepository.findByUserId(userId);
 
         if (!optionalUser.isPresent()) {
             return false;
         }
-        User user = optionalUser.get();
-        if(!password.equals(user.getPassword())){
+        Users users = optionalUser.get();
+        if(!password.equals(users.getPassword())){
             return false;
         }
 

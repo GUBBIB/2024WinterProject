@@ -1,5 +1,6 @@
 package WinterProject.WinterProject.Entity;
 
+import WinterProject.WinterProject.Enum.UserRole;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import java.util.List;
 @Entity
 @Getter @Setter
 @Table(name = "users")
-public class User {
+public class Users {
     @Id
     @Column(name = "userId", unique = true)
     private String userId;
@@ -20,14 +21,18 @@ public class User {
     @Column(length = 50)
     private String name;
 
-    @OneToMany(mappedBy = "userIdF", cascade = CascadeType.ALL)
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private UserRole role = UserRole.USER;
+
+    @OneToMany(mappedBy = "userIdFP", cascade = CascadeType.ALL)
     private List<Post> posts;
-    @OneToMany(mappedBy = "userIdF", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "userIdFC", cascade = CascadeType.ALL)
     private List<Comment> comments;
     
-    public User() {}
+    public Users() {}
 
-    public User(String userId, String email, String password, String name) {
+    public Users(String userId, String email, String password, String name) {
         this.userId = userId; this.email = email;
         this.password = password; this.name = name;
     }

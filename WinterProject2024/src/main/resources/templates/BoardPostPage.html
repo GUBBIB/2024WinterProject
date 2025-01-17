@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,15 @@
                 <p>2024 Winter Project</p>
             </a>
         </div>
-        <div id="loginBtnSection" class="inlineBlock">
-            <div id="loginBtn" onclick="goToLogin()">
-                Login
+
+        <div class="ClassUserSection" sec:authorize="isAnonymous()" id="loginBtn" onclick="goToLogin()">
+            Login
+        </div>
+
+        <div id="IdUserSection" sec:authorize="isAuthenticated()">
+            <div class="ClassUserSection inlineBlock" th:text="${username}"></div>
+            <div class="ClassUserSection inlineBlock" id="logoutBtn" onclick="goToLogout()">
+                Logout
             </div>
         </div>
     </div>

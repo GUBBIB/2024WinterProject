@@ -19,13 +19,13 @@ public class Post {
     @Column(name = "postId")
     private Long postId;
     @ManyToOne
-    @JoinColumn(name = "boardIdF", nullable = false)
+    @JoinColumn(name = "boardIdFP", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private Board boardIdF;
+    private Board boardIdFP;
     @ManyToOne
-    @JoinColumn(name = "userIdF", nullable = false)
+    @JoinColumn(name = "userIdFP", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private User userIdF;
+    private Users userIdFP;
     @Column(length = 255, nullable = false)
     private String title;
     @Column(columnDefinition = "TEXT", nullable = false)
@@ -35,7 +35,7 @@ public class Post {
     @Column(name = "createdAt", updatable = false, nullable = false)
     private LocalDateTime createdAt;
 
-    @OneToMany(mappedBy = "postIdF", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "postIdFC", cascade = CascadeType.ALL)
     private List<Comment> comments = new ArrayList<>();
 
     @PrePersist

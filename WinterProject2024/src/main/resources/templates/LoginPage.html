@@ -1,6 +1,6 @@
 <!-- 로그인 페이지, 메인 페이지 -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +16,21 @@
                     <p>2024 Winter Project</p>
                 </a>
             </div>
-            <div id="loginBtnSection" class="inlineBlock">
-                <div id="loginBtn" onclick="goToLogin()">
-                    Login
+
+            <div class="ClassUserSection" sec:authorize="isAnonymous()" id="loginBtn" onclick="goToLogin()">
+                Login
+            </div>
+
+            <div id="IdUserSection" sec:authorize="isAuthenticated()">
+                <div class="ClassUserSection inlineBlock" th:text="${username}"></div>
+                <div class="ClassUserSection inlineBlock" id="logoutBtn" onclick="goToLogout()">
+                    Logout
                 </div>
             </div>
+        </div>
+
+        <div th:if="${param.error}">
+            사용자 ID 또는 비밀번호를 확인해 주세요.
         </div>
 
         <div id="LoginSection">
@@ -28,10 +38,10 @@
                 Login
             </div>
 
-            <form action="/login" method="post">
+            <form th:action="@{/login}" method="post">
                 <div id="IdSection">
                     <label>
-                        ID <input type="text" name="userId">
+                        ID <input type="text" name="username">
                     </label>
                 </div>
 
@@ -40,6 +50,7 @@
                         Password <input type="password" name="password">
                     </label>
                 </div>
+                <input type="hidden" name="_csrf" value="${_csrf.token}">
                 <input type="submit" value="로그인"> <input type="button" onclick="goToRegister()" value="회원가입">
             </form>
 
