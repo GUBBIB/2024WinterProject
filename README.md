@@ -196,6 +196,13 @@ fi
 </details>
 
 <details open>
+    <summary>Spring Security6</summary>
+
+- [Spring Security6 - Authentication(인증)](https://curiousjinan.tistory.com/entry/Spring-Security6-Authentication%EC%9D%B8%EC%A6%9D)
+- [3-07 로그인과 로그아웃 기능 구현하기](https://wikidocs.net/162255#_1)
+</details>
+
+<details open>
     <summary>MySQL</summary>
 
 - [EC2 Ubuntu 인스턴스 생성부터 Java, Mysql 설치 및 외부접속하기](https://dev-chw.tistory.com/32)
