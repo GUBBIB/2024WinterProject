@@ -23,7 +23,7 @@ public class Users {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private UserRole role = UserRole.USER;
+    private UserRole role = UserRole.ADMIN;
 
     @OneToMany(mappedBy = "userIdFP", cascade = CascadeType.ALL)
     private List<Post> posts;

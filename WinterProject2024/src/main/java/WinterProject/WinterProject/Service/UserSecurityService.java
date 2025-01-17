@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +22,7 @@ import java.util.Optional;
 @Service
 public class UserSecurityService implements UserDetailsService {
 
+    private static final Logger logger = LoggerFactory.getLogger(UserSecurityService.class);
     private final UserRepository userRepository;
     @Override
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException {
@@ -28,8 +31,11 @@ public class UserSecurityService implements UserDetailsService {
 
         Users user = _user.get();
         List<GrantedAuthority> authorities = new ArrayList<>();
-        if ("admin".equals(userId)) {
-            authorities.add(new SimpleGrantedAuthority(UserRole.ADMIN.getValue()));
+
+        logger.info("UserRole: {}", user.getRole());
+
+        if (UserRole.ADMIN.equals(user.getRole())) {
+            authorities.add(new SimpleGrantedAuthority("ROLE_Admin"));
         } else {
             authorities.add(new SimpleGrantedAuthority(UserRole.USER.getValue()));
         }
