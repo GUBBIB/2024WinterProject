@@ -13,6 +13,13 @@
 이 프로젝트는 Spring Boot를 사용하여 ``로그인``, ``회원가입``, ``게시판 기능`` 및 ``실시간 채팅``을 구현한 웹 페이지입니다.<br>
 회원가입 후 로그인을 통해서 게시글 작성 및 댓글을 작성하고 관리할 수 있으며 실시간 채팅이 가능합니다.
 
+## 기술 스택
+- **Backend**: Spring Boot 3.4.1, JAVA-17
+- **Frontend**: HTML, CSS, JavaScript, Thymeleaf
+- **DataBase**: MySQL - 8.0.40 [ 서버 컴퓨터 설치 - Workbench ]
+- **IDE**: IntelliJ IDEA
+- **Cloud Service**: [AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
+
 ## 테스트 아이디
 ![테스트 아이디](https://github.com/user-attachments/assets/93f59501-2081-4c7a-b225-e156ce3a5a72)
 
@@ -29,13 +36,6 @@
 |Test_Admin_1|1111|
 |Test_Admin_2|1111|
 |Test_Admin_3|1111|
-
-## 기술 스택
-- **Backend**: Spring Boot 3.4.1, JAVA-17
-- **Frontend**: HTML, CSS, JavaScript, Thymeleaf
-- **DataBase**: MySQL - 8.0.40 [ 서버 컴퓨터 설치 - Workbench ]
-- **IDE**: IntelliJ IDEA
-- **Cloud Service**: [AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
 
 ## 스프링 부트 의존성 (Spring Boot Dependencies)
 - Spring Web <br>
