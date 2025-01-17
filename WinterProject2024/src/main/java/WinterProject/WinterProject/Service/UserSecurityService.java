@@ -35,7 +35,7 @@ public class UserSecurityService implements UserDetailsService {
         logger.info("UserRole: {}", user.getRole());
 
         if (UserRole.ADMIN.equals(user.getRole())) {
-            authorities.add(new SimpleGrantedAuthority("ROLE_Admin"));
+            authorities.add(new SimpleGrantedAuthority(UserRole.ADMIN.getValue()));
         } else {
             authorities.add(new SimpleGrantedAuthority(UserRole.USER.getValue()));
         }
