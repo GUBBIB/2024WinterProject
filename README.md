@@ -24,9 +24,11 @@
 ### Role_Admin
 |아이디|비밀번호|
 |---------|----|
-|||
-|||
-|||
+|Test_Admin_1|1111|
+|Test_Admin_2|1111|
+|Test_Admin_3|1111|
+
+![테스트 아이디](https://github.com/user-attachments/assets/93f59501-2081-4c7a-b225-e156ce3a5a72)
 
 ## 기술 스택
 - **Backend**: Spring Boot 3.4.1
