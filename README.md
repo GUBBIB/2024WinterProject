@@ -60,16 +60,20 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 ![ERD](https://github.com/user-attachments/assets/f18a7ac7-45b4-45a0-b557-a539b2652ac8)
 
 ## 페이지 뷰
-- 메인 페이지
-![메인 페이지](https://github.com/user-attachments/assets/5d02f76d-0baa-47e2-9660-b0e9301c56f8)
+- 메인 페이지 / 로그인 O
+![메인 페이지 / 로그인 O](https://github.com/user-attachments/assets/4139e180-391b-4669-9297-98185a320135)
+- 메인 페이지 / 로그인 X
+![메인 페이지 / 로그인 X](https://github.com/user-attachments/assets/6f6f91d4-27db-48a8-bafc-2c06bdcd417a)
 - 로그인 페이지
-![로그인 페이지](https://github.com/user-attachments/assets/619b0524-b4db-48cb-9815-a274e30845be)
+![로그인 페이지](https://github.com/user-attachments/assets/c9c4804b-676b-4c89-8d04-8e33cd1fec32)
 - 회원가입 페이지
-![회원가입 페이지](https://github.com/user-attachments/assets/552c5445-134c-4063-bd7c-4341965dc2c5)
+![회원가입 페이지](https://github.com/user-attachments/assets/27e6f8a7-59db-4ed0-855b-6fe94528e7ce)
 - 게시판 페이지
-![게시판 페이지](https://github.com/user-attachments/assets/d9a8a5a4-f19a-4584-86c1-57627190237f)
-- 게시판 관리 페이지
-![게시판 관리 페이지](https://github.com/user-attachments/assets/e142af17-cb76-49f0-b207-feb6c81ef2d2)
+![게시판 페이지](https://github.com/user-attachments/assets/2db9d65f-7c4c-439e-9c27-872e875eab12)
+- 게시판 관리 페이지 / 접근 허용
+![게시판 관리 페이지 / 접근 허용](https://github.com/user-attachments/assets/a2668ac0-11df-402a-b7ca-83d1480d0305)
+- 게시판 관리 페이지 / 접근 제한
+![게시판 관리 페이지 / 접근 제한](https://github.com/user-attachments/assets/17356236-55df-4b95-a750-2cfb59da799d)
 
 ## 추가 사항
 - 포트 충돌로 인해서 포트번호를 8081로 변경
