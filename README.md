@@ -57,8 +57,7 @@ Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했�
 
 ## ERD
 - ERD(Entity Relationship Diagram)
-![ERD](https://github.com/user-attachments/assets/ccdd4804-0ff9-4cbc-b4be-8f7605622332)
-
+![ERD](https://github.com/user-attachments/assets/f18a7ac7-45b4-45a0-b557-a539b2652ac8)
 
 ## 페이지 뷰
 - 메인 페이지
