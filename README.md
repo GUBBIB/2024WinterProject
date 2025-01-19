@@ -179,6 +179,14 @@ fi
 
 </details>
 
+<details>
+    <summary>Iframe 연결 거부 </summary>
+
+**Spring Boot**의 ``Security 의존성``을 사용하면 ``X-Frame-Options Click Jacking`` 공격을 막기 위해 자동으로 ``DENY(Iframe 비허용)``으로 돼 있어 연결 거부에러가 발생했다.
+
+그래서 SecurityConfig.java의 SecurityFilterChain 코드에 ``.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))``를 추가하여 연결 거부 문제를 해결 했다.
+
+</details>
 ## 참고한 곳
 <details open>
     <summary>AWS(Amazone Web Service)</summary>
@@ -218,6 +226,8 @@ fi
 
 - [Spring Security6 - Authentication(인증)](https://curiousjinan.tistory.com/entry/Spring-Security6-Authentication%EC%9D%B8%EC%A6%9D)
 - [3-07 로그인과 로그아웃 기능 구현하기](https://wikidocs.net/162255#_1)
+- [[Spring Security] H2 연결 안되는 에러](https://gyeongsuuuu.tistory.com/65)
+- [[Spring Security] x-frame-option 헤더 설정(iframe)](https://lucas-owner.tistory.com/69)
 </details>
 
 <details open>
