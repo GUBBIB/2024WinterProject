@@ -50,7 +50,7 @@ MySQL과 연결하기위해 추가했습니다.
 동적 웹 페이지를 작성하기 위해서 추가했습니다.
 - Spring Boot DevTools(Optional) <br>
 서버 실행 중 코드 수정시 자동으로 재시작되게 해줍니다. 생산성을 높이기 위해 추가했습니다.
-- Validatio(Optional) <br>
+- Validation <br>
 입력 값이 올바른지 확인하기 위해 추가했습니다.
 - Lombok <br>
 Getter, Setter와 같이 반복적인 Java 코드를 줄이기 위해 추가했습니다.
