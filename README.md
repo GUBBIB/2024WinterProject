@@ -184,7 +184,8 @@ fi
 
 **Spring Boot**의 ``Security 의존성``을 사용하면 ``X-Frame-Options Click Jacking`` 공격을 막기 위해 자동으로 ``DENY(Iframe 비허용)``으로 돼 있어 연결 거부에러가 발생했다.
 
-그래서 ``SecurityConfig.java``의 ``SecurityFilterChain`` 코드에 ``.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))``를 추가하여 연결 거부 문제를 해결 했다.
+그래서 ``SecurityConfig.java``의 ``SecurityFilterChain`` 코드에  
+``.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))``를 추가하여 연결 거부 문제를 해결 했다.
 
 </details>
 
