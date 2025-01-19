@@ -20,6 +20,7 @@ public class SecurityConfig {
 
         http
                 .csrf(AbstractHttpConfigurer::disable)
+                .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/BoardManagement/**").hasRole("Admin") // 이 페이지는 ADMIN 만 접속 가능
                         .requestMatchers("/BoardPostPage/**").hasAnyRole("Admin", "User")
