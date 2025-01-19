@@ -187,6 +187,7 @@ fi
 그래서 SecurityConfig.java의 SecurityFilterChain 코드에 ``.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))``를 추가하여 연결 거부 문제를 해결 했다.
 
 </details>
+
 ## 참고한 곳
 <details open>
     <summary>AWS(Amazone Web Service)</summary>
