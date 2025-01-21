@@ -187,6 +187,7 @@ fi
 그래서 ``SecurityConfig.java``의 ``SecurityFilterChain`` 코드에  
 ``.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()))``를 추가하여 연결 거부 문제를 해결 했다.
 
+※ ``Click Jacking``이란 웹 사용자가 자신이 클릭하고 있다고 인지하는 것과 다른 어떤 것을 클릭하게 속이는 악의적인 기법이다.
 </details>
 
 ## 참고한 곳
