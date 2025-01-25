@@ -55,6 +55,8 @@ public class BoardPostController {
         Board board = boardService.getBoardById(boardId);
         List<Post> post = postService.getPostList();
 
+        model.addAttribute("isBoardSelected", 1);
+
         if(post.isEmpty()){
             model.addAttribute("message", "게시글을 작성해 보세요!");
         } else {
@@ -62,7 +64,20 @@ public class BoardPostController {
         }
 
         model.addAttribute("board", board);
+        return "BoardContent";
+    }
+
+    @GetMapping("/BoardPostPage/BoardContent")
+    public String basicIframePage(Model model){
+        model.addAttribute("isBoardSelected", 0);
 
         return "BoardContent";
+    }
+
+    @GetMapping("/BoardPostPage/{boardId}/CreatePost")
+    public String goToCreatePost(@PathVariable("boardId") Long boardId, @RequestHeader(value = "Referer", required = false) String referer, Model model){
+        model.addAttribute("boardId", boardId);
+        model.addAttribute("referer", referer);
+        return "CreatePost";
     }
 }

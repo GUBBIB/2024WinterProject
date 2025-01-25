@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="/css/mainPageStyle.css">
 </head>
 <body>
-    tset
-    <ul th:if="${#lists.isEmpty(posts)}">
-        <p th:text="${message}"></p>
-    </ul>
-    <ul th:unless="${#lists.isEmpty(posts)}">
-        <li th:each="post : #{posts}">
-            <a th:href="|/PostPage/${post.postId}|" th:text="${post.title}">게시글 제목</a>
-        </li>
-        test
-    </ul>
+
+        <ul th:if="${#lists.isEmpty(posts)}">
+            <li th:text="${message}"></li>
+        </ul>
+
+        <ul th:unless="${#lists.isEmpty(posts)}">
+            <li th:each="post : #{posts}">
+                <a th:href="|/PostPage/${post.postId}|" th:text="${post.title}">게시글 제목</a>
+            </li>
+        </ul>
+
+        <div id="downBtnSection">
+            <button type="button" th:onclick="|goToCreatePost(${board.boardId})|">게시글 작성</button>
+        </div>
+
+
+<script src="/javascript/script.js"></script>
 </body>
 </html>

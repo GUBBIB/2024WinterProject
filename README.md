@@ -162,6 +162,7 @@ fi
 - 게시판 생성 및 삭제기능 ( 2025-01-11 완료 )
 - 접근 제한 설정 ( 2025-01-17 완료 )
 - 로그인 및 로그아웃 기능 ( 2025-01-17 완료 )
+- 게시글 생성 기능 ( 2025-01-26 완료 )
 - 관리자 계정 생성[ 모든 게시글, 댓글 삭제 가능 ]
 - 실시간 채팅 기능
 - 회원 탈퇴 기능
@@ -210,6 +211,7 @@ fi
 - [Springboot 시작할때 APPLICATION FAILED TO START - 세폴리아](https://hsmang.tistory.com/22)
 - [[스프링부트 4] Spring MVC Controller 만들기 1탄](https://shallow-learning.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-4-Spring-MVC-Controller-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 - [[Spring Boot] @PathVariable 사용법](https://so-easy-coding.tistory.com/8)
+- [https://innovation123.tistory.com/54]([Spring Boot] @PathVariable과 @RequestParam - 파라미터)
 </details>
 
 <details open>
@@ -231,6 +233,7 @@ fi
 - [3-07 로그인과 로그아웃 기능 구현하기](https://wikidocs.net/162255#_1)
 - [[Spring Security] H2 연결 안되는 에러](https://gyeongsuuuu.tistory.com/65)
 - [[Spring Security] x-frame-option 헤더 설정(iframe)](https://lucas-owner.tistory.com/69)
+- [https://velog.io/@pig426/Spring-Principal-%EA%B0%9D%EC%B2%B4]([Spring] Principal 객체)
 </details>
 
 <details open>

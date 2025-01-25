@@ -43,4 +43,7 @@ public class Post {
         this.createdAt = LocalDateTime.now();
     }
 
+    public Post(){
+
+    }
 }
