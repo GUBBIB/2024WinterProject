@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -53,14 +54,21 @@ public class BoardPostController {
     @GetMapping("/BoardPostPage/{boardId}")
     public String iframeMove(@PathVariable("boardId") Long boardId, Model model){
         Board board = boardService.getBoardById(boardId);
-        List<Post> post = postService.getPostList();
+        List<Post> getAllPost = postService.getPostList();
+        List<Post> posts = new ArrayList<>();
+
+        for(Post post : getAllPost){
+            if(post.getBoardIdFP().getBoardId() == boardId){
+                posts.add(post);
+            }
+        }
 
         model.addAttribute("isBoardSelected", 1);
 
-        if(post.isEmpty()){
+        if(posts.isEmpty()){
             model.addAttribute("message", "게시글을 작성해 보세요!");
         } else {
-            model.addAttribute("posts", post);
+            model.addAttribute("posts", posts);
         }
 
         model.addAttribute("board", board);

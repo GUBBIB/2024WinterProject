@@ -8,10 +8,10 @@ import WinterProject.WinterProject.Repository.PostRepository;
 import WinterProject.WinterProject.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 
@@ -51,5 +51,15 @@ public class PostController {
         }
 
         return "redirect:" + referer;
+    }
+
+    @GetMapping("/PostPage/{postId}")
+    public String goToPostPage(@PathVariable("postId") Long postId, Model model){
+
+        Post post = postRepository.findByPostId(postId).get();
+
+        model.addAttribute("post", post);
+
+        return "PostContent";
     }
 }

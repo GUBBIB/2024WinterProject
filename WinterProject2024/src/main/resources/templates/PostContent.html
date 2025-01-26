@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Content Page</title>
+    <link rel="stylesheet" href="/css/mainPageStyle.css">
+</head>
+<body>
+
+    <div>
+        <div id="postTitleSection" th:text="${post.title}">post title section</div>
+        <div id="postContentSection" th:text="${post.content}">post content section</div>
+    </div>
+
+</body>
+</html>

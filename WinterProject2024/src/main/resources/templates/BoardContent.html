@@ -12,7 +12,7 @@
         </ul>
 
         <ul th:unless="${#lists.isEmpty(posts)}">
-            <li th:each="post : #{posts}">
+            <li th:each="post : ${posts}">
                 <a th:href="|/PostPage/${post.postId}|" th:text="${post.title}">게시글 제목</a>
             </li>
         </ul>
