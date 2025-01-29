@@ -1,8 +1,9 @@
 # 2024 겨울방학 프로젝트
 
 ## 페이지 링크
-- AWS 배포 페이지 
-[메인 페이지 - 서버 연결 O](http://ec2-13-50-5-134.eu-north-1.compute.amazonaws.com:8081/)
+- ~~AWS 배포 페이지~~
+~~[메인 페이지 - 서버 연결 O](http://ec2-13-50-5-134.eu-north-1.compute.amazonaws.com:8081/)~~
+[ AWS 비용 문제로 호스팅 중단 ]
 - IntelliJ Test 서버
 [IntelliJ Test 서버](http://localhost:8081/)
 
@@ -18,7 +19,7 @@
 - **Frontend**: HTML, CSS, JavaScript, Thymeleaf
 - **DataBase**: MySQL - 8.0.40 [ 서버 컴퓨터 설치 - Workbench ]
 - **IDE**: IntelliJ IDEA
-- **Cloud Service**: [AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)
+- **Cloud Service**: ~~[AWS(Amazone Web Service) - Ubuntu](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Home:)~~ [ AWS 비용 문제로 호스팅 중단 ]
 
 ## 테스트 아이디
 ![테스트 아이디](https://github.com/user-attachments/assets/93f59501-2081-4c7a-b225-e156ce3a5a72)
@@ -193,7 +194,7 @@ fi
 
 ## 참고한 곳
 <details open>
-    <summary>AWS(Amazone Web Service)</summary>
+    <summary>~~AWS(Amazone Web Service)~~</summary>
 
 - [[배포] AWS를 통한 배포 방법 알아보기(인스턴스 생성과 연결)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EA%B3%BC-%EC%97%B0%EA%B2%B0)
 - [[배포] AWS를 통한 배포 방법 알아보기(EC2 서버 실행)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0EC2-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89)
