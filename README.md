@@ -194,16 +194,6 @@ fi
 
 ## 참고한 곳
 <details open>
-    <summary>~~AWS(Amazone Web Service)~~</summary>
-
-- [[배포] AWS를 통한 배포 방법 알아보기(인스턴스 생성과 연결)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EA%B3%BC-%EC%97%B0%EA%B2%B0)
-- [[배포] AWS를 통한 배포 방법 알아보기(EC2 서버 실행)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0EC2-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89)
-- [[AWS] 인스턴스 SSH 접속 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
-- [[AWS] EC2 인스턴스를 시작하거나 실행할 때 발생하는 InsufficientInstanceCapacity 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
-- [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
-</details>
-
-<details open>
     <summary>스프링 부트</summary>
 
 - [[Spring-Boot] Spring-boot 프로젝트 생성 / 빌드/ 실행](https://8156217.tistory.com/68)
@@ -260,3 +250,14 @@ fi
 - [TIL 29. 정규표현식(e-mail, password 유효성)](https://velog.io/@fall031/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D)
 - ChatGPT
 </details>
+
+<details>
+    <summary>AWS(Amazone Web Service)</summary>
+
+- [[배포] AWS를 통한 배포 방법 알아보기(인스턴스 생성과 연결)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EA%B3%BC-%EC%97%B0%EA%B2%B0)
+- [[배포] AWS를 통한 배포 방법 알아보기(EC2 서버 실행)](https://kang-james.tistory.com/entry/%EB%B0%B0%ED%8F%AC-AWS%EB%A5%BC-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0EC2-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89)
+- [[AWS] 인스턴스 SSH 접속 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
+- [[AWS] EC2 인스턴스를 시작하거나 실행할 때 발생하는 InsufficientInstanceCapacity 오류](https://support.bespinglobal.com/ko/support/solutions/articles/73000615454--aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-ssh-%EC%A0%91%EC%86%8D-%EC%98%A4%EB%A5%98)
+- [AWS EC2에 Tomcat 서버 연결 및 오류 해결 과정 (Tomcat, 서버 충돌, 보안그룹, RDS)](https://wing-beat.tistory.com/177)
+</details>
+
