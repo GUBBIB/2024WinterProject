@@ -29,4 +29,11 @@ public class UserService {
 
         return true;
     }
+
+    public Users getUserByUserId(String userId){
+
+        Users user = userRepository.findById(userId).get();
+
+        return user;
+    }
 }

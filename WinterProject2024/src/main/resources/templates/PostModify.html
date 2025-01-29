@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Modify Page</title>
+    <link rel="stylesheet" href="/css/mainPageStyle.css">
+</head>
+<body>
+    <form action="/ModifyPostFunction" method="post">
+        <input type="hidden" name="referer", th:value="${referer}">
+        <input type="hidden" name="boardId" th:value="${post.boardIdFP.boardId}">
+        <input type="hidden" name="postId" th:value="${post.postId}">
+        <input th:value="${post.title}" type="text" name="title" placeholder="제목을 적어주세요!">
+        <textarea th:text="${post.content}" name="content" cols="30" rows="10" placeholder="내용을 입력해 주세요!"></textarea>
+        <input type="submit" value="게시글 수정">
+    </form>
+</body>
+</html>

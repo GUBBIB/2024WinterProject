@@ -10,7 +10,22 @@
     <div>
         <div id="postTitleSection" th:text="${post.title}">post title section</div>
         <div id="postContentSection" th:text="${post.content}">post content section</div>
+
+        <div id="postBtnSection">
+            <button type="button" th:onclick="|goToCreatePost(${post.boardIdFP.boardId})|">게시글 작성</button>
+            <div th:if="${post.userIdFP.userId == username}">
+                <button type="button" th:onclick="|goToPostModify(${post.boardIdFP.boardId}, ${post.postId})|">수정</button>
+                <button type="button" th:onclick="|goToPostDelete(${post.boardIdFP.boardId}, ${post.postId})|">삭제</button>
+            </div>
+        </div>
+
+        <div id="commentSection">
+            <div>
+
+            </div>
+        </div>
     </div>
 
+<script src="/javascript/script.js"></script>
 </body>
 </html>
