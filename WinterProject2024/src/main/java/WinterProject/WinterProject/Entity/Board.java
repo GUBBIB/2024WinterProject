@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Getter @Setter
+@Getter
+@Setter
 @Table(name = "board")
 public class Board {
     @Id
@@ -22,4 +23,6 @@ public class Board {
 
     @OneToMany(mappedBy = "boardIdFP", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();
+    @OneToMany(mappedBy = "boardIdFC", cascade = CascadeType.ALL)
+    private List<Comment> comments = new ArrayList<>();
 }

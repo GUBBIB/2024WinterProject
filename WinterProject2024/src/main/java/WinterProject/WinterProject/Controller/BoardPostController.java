@@ -72,6 +72,7 @@ public class BoardPostController {
         }
 
         model.addAttribute("board", board);
+
         return "BoardContent";
     }
 

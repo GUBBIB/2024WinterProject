@@ -20,9 +20,26 @@
         </div>
 
         <div id="commentSection">
+            <!-- 댓글 작성 창-->
             <div>
-
+                <form action="/CreateCommentFunction" method="post">
+                    <input type="hidden" name="postId" th:value="${post.postId}">
+                    <input type="hidden" name="referer" th:value="${referer}">
+                    <textarea id="commentTextarea" name="content" cols="100" rows="10" placeholder="댓글을 작성 해 주세요!"></textarea>
+                    <button type="submit">작성</button>
+                </form>
             </div>
+
+            <!-- 이미 달린 댓글들 보는 곳-->
+            <div>
+                <ul>
+                    <li th:each="comment : ${comments}">
+                        <span th:text="${comment.content}">댓글</span>
+                        <span th:onclick="|goToCommentRemove(${comment.commentId}, ${post.boardIdFP.boardId}, ${post.postId})|">x</span>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 

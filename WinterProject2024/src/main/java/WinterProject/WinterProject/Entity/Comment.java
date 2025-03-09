@@ -28,9 +28,14 @@ public class Comment {
     private String content;
     @Column(name = "createdAt", updatable = false, nullable = false)
     private LocalDateTime createdAt;
+    @ManyToOne
+    @JoinColumn(name = "boardIdFC", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private Board boardIdFC;
 
     @PrePersist
     protected void setDate(){
         this.createdAt = LocalDateTime.now();
     }
+
 }

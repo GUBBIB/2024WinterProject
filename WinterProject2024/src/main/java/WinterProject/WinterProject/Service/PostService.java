@@ -37,6 +37,14 @@ public class PostService {
 
         return post;
     }
+
+    public Post getPostByPostId(Long postId){
+
+        Post post = postRepository.findByPostId(postId).get();
+
+        return post;
+    }
+
     public void modifyPost(Long boardId, Long postId, String title, String content) {
         Post post = postRepository.findByBoardIdFP_BoardIdAndPostId(boardId, postId).get();
 

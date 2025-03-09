@@ -35,8 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-app.log
-build.log
-deploy.sh
-restart.sh

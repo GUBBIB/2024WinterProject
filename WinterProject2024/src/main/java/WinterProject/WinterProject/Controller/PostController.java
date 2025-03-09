@@ -1,12 +1,14 @@
 package WinterProject.WinterProject.Controller;
 
 import WinterProject.WinterProject.Entity.Board;
+import WinterProject.WinterProject.Entity.Comment;
 import WinterProject.WinterProject.Entity.Post;
 import WinterProject.WinterProject.Entity.Users;
 import WinterProject.WinterProject.Repository.BoardRepository;
 import WinterProject.WinterProject.Repository.PostRepository;
 import WinterProject.WinterProject.Repository.UserRepository;
 import WinterProject.WinterProject.Service.BoardService;
+import WinterProject.WinterProject.Service.CommentService;
 import WinterProject.WinterProject.Service.PostService;
 import WinterProject.WinterProject.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.List;
 
 @Controller
 public class PostController {
@@ -24,6 +27,8 @@ public class PostController {
     UserService userService;
     @Autowired
     BoardService boardService;
+    @Autowired
+    CommentService commentService;
 
     //    @PreAuthorize("isAuthenticated()")
     @PostMapping("/CreatePostFunction")
@@ -52,8 +57,12 @@ public class PostController {
         Post post = postService.getPostByBoardIdAndPostId(boardId, postId);
         String username = principal.getName();
 
+        List<Comment> comment = commentService.getCommentByBoardIdAndPostId(boardId, postId);
+
         model.addAttribute("post", post);
         model.addAttribute("username", username);
+        model.addAttribute("comments", comment);
+
         return "PostContent";
     }
 
